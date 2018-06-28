@@ -12,7 +12,7 @@ var Dropbox = require('dropbox').Dropbox;
 export default class Main extends Component{
   constructor(props){
     super(props);
-    let dbx = new Dropbox({ accessToken: 'process.env.REACT_APP_API_KEY' });
+    let dbx = new Dropbox({ accessToken: process.env.REACT_APP_API_KEY });
     this.state={
       posters: [],
       posterdisplays:[],
