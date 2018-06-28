@@ -1,0 +1,33 @@
+.innerspectrum{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.aboutspectrum{
+  font-size: 12px;
+  width: 35%;
+  height: 90%;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+}
+.aboutspectrum > a {
+  text-decoration: underline;
+}
+.spectrumcontent{
+  height: 100%;
+  width: 60%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.paper{
+  height: 400px;
+  background-size: cover;
+  margin: 5px;
+}
+.paper > p {
+  text-align: center;
+  margin-top: 50px;
+}

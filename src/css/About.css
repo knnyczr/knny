@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+.aboutwrapper{
+  display: flex;
+  padding: 10px;
+}
+.about{
+  font-size: 12px;
+  width: 35%;
+  height: 90%;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+  overflow: scroll;
+}
+.about > span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.photo{
+  border-radius: 100%;
+  position: absolute;
+  right: 200px;
+  height: 400px;
+  width: 400px;
+  background: url('../images/self.jpg');
+  background-size: cover;
+}

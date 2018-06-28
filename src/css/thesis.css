@@ -1,0 +1,39 @@
+.aboutthesis{
+  font-size: 12px;
+  width: 35%;
+  height: 90%;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+  overflow: auto;
+}
+.thesiscontent{
+  height: 100%;
+  width: 60%;
+  overflow: auto;
+}
+.innerthesis{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.images{
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.miniposters{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 55px;
+}
+.miniposter{
+  height: 200px;
+  background-size: cover;
+  margin: 5px;
+}
+.miniposter > p {
+  padding: 15px;
+}

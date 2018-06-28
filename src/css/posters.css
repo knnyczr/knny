@@ -1,0 +1,26 @@
+.innerposters{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.aboutposters{
+  font-size: 12px;
+  width: 35%;
+  height: 90%;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+}
+.posterscontent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  width: 60%;
+  overflow: scroll;
+}
+.posterclass{
+  background-size: cover;
+  height: 550px;
+  margin: 10px;
+}

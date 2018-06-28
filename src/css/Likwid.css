@@ -1,0 +1,51 @@
+.innerlikwid{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.aboutlikwid{
+  font-size: 12px;
+  width: 35%;
+  height: 90%;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+}
+.likwidcontent{
+  height: 100%;
+  width: 60%;
+  overflow: auto;
+}
+.herolikwidimages{
+  background-size: cover;
+  position: absolute;
+  width: 55%;
+  height: 300px;
+}
+.herolikwid{
+  background-size: cover;
+  background-image: center;
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+}
+.lander{
+  background-size: cover;
+  width: 80%;
+  height: 180px;
+  margin: 10px auto;
+}
+.landerads{
+  background-size: cover;
+  width: 80%;
+  height: 270px;
+  margin: 10px auto;
+}
+.likwidimages{
+  background-size: cover;
+  width: 80%;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+}
