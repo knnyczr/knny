@@ -12,7 +12,7 @@ var Dropbox = require('dropbox').Dropbox;
 export default class Main extends Component{
   constructor(props){
     super(props);
-    let dbx = new Dropbox({ accessToken: 'gXLLoKo9dOAAAAAAAAAAExKjymHSQ8h_c8luIKwlAfdDrEL3FRyIn15SvXEm13-p' });
+    let dbx = new Dropbox({ accessToken: 'process.env.REACT_APP_API_KEY' });
     this.state={
       posters: [],
       posterdisplays:[],
@@ -50,7 +50,7 @@ export default class Main extends Component{
     e.preventDefault();
     console.log('itshappening')
     let maininner = document.querySelector('.inner');
-    
+
   }
   render(){
     let posterdisplays = this.state.posterdisplays
