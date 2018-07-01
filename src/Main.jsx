@@ -48,9 +48,11 @@ export default class Main extends Component{
   }
   handlescrolling(e) {
     e.preventDefault();
-    console.log('itshappening')
-    let maininner = document.querySelector('.inner');
-
+    let maininner =  [...document.querySelectorAll('.inners')]
+    // console.log(maininner)
+    maininner.map((d) => {
+      d.style.transform = "translateY(50%)";
+    })
   }
   render(){
     let posterdisplays = this.state.posterdisplays

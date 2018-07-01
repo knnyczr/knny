@@ -19,7 +19,7 @@ export default class Works extends Component{
     return(
       <div className="wrapper">
         <div className="inner">
-              <div className="description">
+              <div className="inners description">
                 <h1>DAILY POSTER PROJECT</h1>
                 <p><Link to='/works/posters'>view project</Link></p>
                 <p>
@@ -32,9 +32,9 @@ export default class Works extends Component{
                   Prints and other printed media available at <a href="https://society6.com/kennycruzer">Society6</a>
                 </p>
               </div>
-              <div className="work" style={{ backgroundImage: `url(${posters})` }}></div>
+              <div className="inners work" style={{ backgroundImage: `url(${posters})` }}></div>
 
-              <div className="description">
+              <div className="inners description">
                 <h1>BRANDING</h1>
                 <p><Link to='/works/likwid'>view project</Link></p>
                 <p>
@@ -42,9 +42,9 @@ export default class Works extends Component{
                   The creative process was divided into several steps, each requiring critical solutions. The color palette as well as the typefaces were chosen based on the overall brand strategy. Each creative decision was made in hopes of company growth and recognition
                 </p>
                 </div>
-                <div className="work" style={{ backgroundImage: `url(${likwid})` }}></div>
+                <div className="inners work" style={{ backgroundImage: `url(${likwid})` }}></div>
 
-              <div className="description">
+              <div className="inners description">
                 <h1>FINE ART</h1>
                 <p><Link to='/works/thesis'>view project</Link></p>
                 <p>
@@ -73,9 +73,9 @@ export default class Works extends Component{
  
                 </p>
                 </div>
-                <div className="work" style={{ backgroundImage: `url(${thesis})` }}></div>
+                <div className="inners work" style={{ backgroundImage: `url(${thesis})` }}></div>
 
-              <div className="description">
+              <div className="inners description">
                 <h1>BRANDING</h1>
                 <p><Link to='/works/amys'>view project</Link></p>
                 <p>
@@ -86,9 +86,9 @@ export default class Works extends Component{
                   The creative process was divided into several steps, each requiring critical solutions. The color palette as well as the typefaces were chosen based on the overall brand strategy. Each creative decision was made in hopes of company growth and recognition
                 </p>
                 </div>
-                <div className="work" style={{ backgroundImage: `url(${amys})` }}></div>
+                <div className="inners work" style={{ backgroundImage: `url(${amys})` }}></div>
 
-              <div className="description">
+              <div className="inners description">
                 <h1>NEWSPAPER DESIGN</h1>
                 <p><Link to='/works/spectrum'>view project</Link></p>
                 <p>
@@ -105,9 +105,9 @@ export default class Works extends Component{
                   <a href="http://www.ubspectrum.com/">The Spectrum</a>
                 </p>
                 </div>
-                <div className="work" style={{ backgroundImage: `url(${spectrum})` }}></div>
+                <div className="inners work" style={{ backgroundImage: `url(${spectrum})` }}></div>
 
-                <div className="description">
+                <div className="inners description">
                   <h1>uLog</h1>
                   <p>
                     A "U" friendly digital space to allow it's user to express your "U"-ness. A blog that allows you to upload snippets of your life and both with other over stuff you love.<br />
@@ -122,7 +122,7 @@ export default class Works extends Component{
                 </div>
                 <div className="work" style={{ backgroundImage: `url(${ulog})` }}></div>
 
-                <div className="description">
+                <div className="inners description">
                   <h1>I love Hue</h1>
                   <p>
                     I love hue is the original single player game that makes puzzles out of gradients. This game is a clone of called HueClone. At the beginning of the level, the player is presented with a board made up of tiles closely spaced together. Each tile has an individual color that together with it's siblings make gradient. The board then is re-arranged and player has to recreate that gradient.
@@ -132,9 +132,9 @@ export default class Works extends Component{
                     <a href="https://github.com/knnyczr/I-love-Hue">GitHub</a>
                   </p>
                 </div>
-                <div className="work" style={{ backgroundImage: `url(${hue})` }}></div>
+                <div className="inners work" style={{ backgroundImage: `url(${hue})` }}></div>
 
-                <div className="description">
+                <div className="inners description">
                   <h1>Pal Et</h1>
                   <p>
                     This is an app for developers and designers to learn about colors, and color relationships through palettes. The app will generate a palette from an API call, the user will be able to then add the palette to a public "collection" and/or print it to get a printed version of the palette.
@@ -147,7 +147,7 @@ export default class Works extends Component{
                     <a href="https://github.com/knnyczr/Pal_et">GitHub</a>
                   </p>
                 </div>
-                <div className="work last" style={{ backgroundImage: `url(${palet})` }}></div>
+                <div className="inners work last" style={{ backgroundImage: `url(${palet})` }}></div>
         </div>
       </div>
     )
