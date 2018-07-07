@@ -19,6 +19,33 @@ export default class Works extends Component{
     return(
       <div className="wrapper">
         <div className="inner">
+
+            <div className="card">
+
+              <div className="card-image">
+                <figure className="image is-16by9">
+                  <img style={{ backgroundImage: `url(${posters})` }} />
+                </figure>
+              </div>
+
+              <div className="media-content">
+                <p className="title is-4">DAILY POSTER PROJECT</p>
+              </div>
+
+              <div className="content">
+                <p><Link to='/works/posters'>view project</Link></p>
+                One poster everyday for a year to develop aesthetics, refine story telling, and share beautiful design. Each have their own narrative, a cross between fantasy and reality. Some created overlap and combine to make an overarching theme, they create mini series. All posters were created using Photoshop, and Illustrator.
+                <br /><br />
+                I throughout the year I felt inspired by my daily, political, and musical climate. I combine photography (provided by unsplash,) type, and color creating unique narrative.
+                <br />
+                Free download available of all the Hi-Def posters, perfect home screen for your iPhone or iPad.
+                <br /><br />
+                Prints and other printed media available at <a href="https://society6.com/kennycruzer">Society6</a>
+              </div>
+
+            
+            </div>
+
               <div className="inners description">
                 <h1>DAILY POSTER PROJECT</h1>
                 <p><Link to='/works/posters'>view project</Link></p>

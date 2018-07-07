@@ -2,11 +2,12 @@
 
 .inner{
   height: 100%;
-  width: 80%;
-  overflow-x: auto;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
   display: flex;
   flex-wrap: nowrap;
-  padding: 10%;
+  padding: 5%;
 }
 .work{
   flex: 1 0 auto;
@@ -35,4 +36,16 @@ p{
 }
 p > a {
   text-decoration: underline;
+}
+
+.image > img {
+  background-size: cover;
+}
+
+.card{
+  padding: 5%;
+}
+
+.card > .content {
+  overflow: scroll;
 }

@@ -16,6 +16,7 @@ nav{
   padding: 20px;
 }
 .logo{
+  margin: 10px;
   width: 10%;
   min-width: 120px;
 }
@@ -24,12 +25,12 @@ nav > ul{
   display: inline;
   position: absolute;
   right: 50px;
-  top:10px;
+  top: 10px;
 }
-li{
+ul > li{
   font-size: 12px;
   display:inline;
-  margin: 0 10px;
+  margin: 0 10%;
   font-family: 'Montserrat', sans-serif;
 }
 a{
@@ -37,13 +38,13 @@ a{
 }
 .main{
   border: 1px solid black;
-  width: 93%;
+  width: 96%;
   height: 83vh;
-  margin: 20px;
+  margin: 20px auto;
   overflow: hidden;
 }
 .line{
-  margin-top: 5px;
+  margin: 0 auto;
   border-bottom: 1px solid black;
   width: 95%;
 }

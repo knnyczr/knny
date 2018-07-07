@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import {} from 'dotenv/config'
+import {} from 'dotenv/config';
 import Main from './Main';
 import Nav from './Nav';
 import './css/Main.css';
+import 'bulma/css/bulma.css';
+
+
 
 class App extends Component {
   render() {

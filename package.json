@@ -5,6 +5,7 @@
   "author": "Kenneth Cruz <kenny@knnyczr.com>",
   "license": "MIT",
   "dependencies": {
+    "bulma": "^0.7.1",
     "dotenv": "^5.0.1",
     "dropbox": "^4.0.4",
     "isomorphic-fetch": "^2.2.1",

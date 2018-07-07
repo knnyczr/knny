@@ -47,12 +47,11 @@ export default class Main extends Component{
     this.fetchapi();
   }
   handlescrolling(e) {
-    e.preventDefault();
-    let maininner =  [...document.querySelectorAll('.inners')]
-    // console.log(maininner)
-    maininner.map((d) => {
-      d.style.transform = "translateY(50%)";
-    })
+    // e.preventDefault();
+    // let maininner =  [...document.querySelectorAll('.inners')]
+    // maininner.map((d) => {
+    //   // d.style.transform = "translateY(50.%)";
+    // })
   }
   render(){
     let posterdisplays = this.state.posterdisplays
