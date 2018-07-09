@@ -20,33 +20,212 @@ export default class Works extends Component{
       <div className="wrapper">
         <div className="inner">
 
-            <div className="card">
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is-5by3">
+                <img style={{ backgroundImage: `url(${posters})` }} />
+              </figure>
+            </div>
 
-              <div className="card-image">
-                <figure className="image is-16by9">
-                  <img style={{ backgroundImage: `url(${posters})` }} />
-                </figure>
-              </div>
-
-              <div className="media-content">
-                <p className="title is-4">DAILY POSTER PROJECT</p>
+            <div className="card-content">
+              <div className="media">
+                <div className="media-content">
+                  <p className="title is-4">Daily Posters</p>
+                </div>
               </div>
 
               <div className="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
                 <p><Link to='/works/posters'>view project</Link></p>
-                One poster everyday for a year to develop aesthetics, refine story telling, and share beautiful design. Each have their own narrative, a cross between fantasy and reality. Some created overlap and combine to make an overarching theme, they create mini series. All posters were created using Photoshop, and Illustrator.
-                <br /><br />
-                I throughout the year I felt inspired by my daily, political, and musical climate. I combine photography (provided by unsplash,) type, and color creating unique narrative.
-                <br />
-                Free download available of all the Hi-Def posters, perfect home screen for your iPhone or iPad.
-                <br /><br />
-                Prints and other printed media available at <a href="https://society6.com/kennycruzer">Society6</a>
+              <br />
               </div>
 
-            
+            </div>
+          </div>
+
+
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is-5by3">
+                <img style={{ backgroundImage: `url(${likwid})` }} />
+              </figure>
             </div>
 
-              <div className="inners description">
+            <div className="card-content">
+              <div className="media">
+
+                <div className="media-content">
+                  <p className="title is-4">Daily Posters</p>
+                </div>
+              </div>
+
+              <div className="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <p><Link to='/works/likwid'>view project</Link></p>
+              <br />
+              </div>
+
+            </div>
+          </div>
+
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is-5by3">
+                <img style={{ backgroundImage: `url(${thesis})` }} />
+              </figure>
+            </div>
+
+            <div className="card-content">
+              <div className="media">
+
+                <div className="media-content">
+                  <p className="title is-4">Daily Posters</p>
+                </div>
+              </div>
+
+              <div className="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <p><Link to='/works/thesis'>view project</Link></p>
+                <br />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is-5by3">
+                <img style={{ backgroundImage: `url(${amys})` }} />
+              </figure>
+            </div>
+
+            <div className="card-content">
+              <div className="media">
+
+                <div className="media-content">
+                  <p className="title is-4">Daily Posters</p>
+                </div>
+              </div>
+
+              <div className="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <p><Link to='/works/thesis'>view project</Link></p>
+                <br />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is-5by3">
+                <img style={{ backgroundImage: `url(${spectrum})` }} />
+              </figure>
+            </div>
+
+            <div className="card-content">
+              <div className="media">
+
+                <div className="media-content">
+                  <p className="title is-4">Daily Posters</p>
+                </div>
+              </div>
+
+              <div className="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <p><Link to='/works/thesis'>view project</Link></p>
+                <br />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is-5by3">
+                <img style={{ backgroundImage: `url(${ulog})` }} />
+              </figure>
+            </div>
+
+            <div className="card-content">
+              <div className="media">
+
+                <div className="media-content">
+                  <p className="title is-4">Daily Posters</p>
+                </div>
+              </div>
+
+              <div className="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <p><Link to='/works/thesis'>view project</Link></p>
+                <br />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is-5by3">
+                <img style={{ backgroundImage: `url(${hue})` }} />
+              </figure>
+            </div>
+
+            <div className="card-content">
+              <div className="media">
+
+                <div className="media-content">
+                  <p className="title is-4">Daily Posters</p>
+                </div>
+              </div>
+
+              <div className="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <p><Link to='/works/thesis'>view project</Link></p>
+                <br />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is-5by3">
+                <img style={{ backgroundImage: `url(${palet})` }} />
+              </figure>
+            </div>
+
+            <div className="card-content">
+              <div className="media">
+
+                <div className="media-content">
+                  <p className="title is-4">Daily Posters</p>
+                </div>
+              </div>
+
+              <div className="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+                <p><Link to='/works/thesis'>view project</Link></p>
+                <br />
+              </div>
+
+            </div>
+          </div>
+
+              {/* <div className="inners description">
                 <h1>DAILY POSTER PROJECT</h1>
                 <p><Link to='/works/posters'>view project</Link></p>
                 <p>
@@ -174,7 +353,7 @@ export default class Works extends Component{
                     <a href="https://github.com/knnyczr/Pal_et">GitHub</a>
                   </p>
                 </div>
-                <div className="inners work last" style={{ backgroundImage: `url(${palet})` }}></div>
+                <div className="inners work last" style={{ backgroundImage: `url(${palet})` }}></div> */}
         </div>
       </div>
     )
