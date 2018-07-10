@@ -20,7 +20,6 @@ export default class Main extends Component{
     };
     this.getdisplays = this.getdisplays.bind(this)
     this.fetchapi = this.fetchapi.bind(this)
-    this.handlescrolling = this.handlescrolling.bind(this)
   }
   fetchapi(){
     this.state.dbx.filesListFolder({ path: "/resized" })
@@ -46,17 +45,11 @@ export default class Main extends Component{
   componentWillMount() {
     this.fetchapi();
   }
-  handlescrolling(e) {
-    // e.preventDefault();
-    // let maininner =  [...document.querySelectorAll('.inners')]
-    // maininner.map((d) => {
-    //   // d.style.transform = "translateY(50.%)";
-    // })
-  }
+
   render(){
     let posterdisplays = this.state.posterdisplays
     return(
-      <div className="main" onScroll={(e) => this.handlescrolling(e)}>
+      <div className="main">
         <Switch>
           <Route path="/works/amys" component={Amys}/>
           <Route path="/works/posters" render={() => <Posters displays={posterdisplays} /> } />

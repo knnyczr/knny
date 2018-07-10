@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900|Roboto:300');
 
+:root{
+  --photoshop: #4F7CAC;
+  --illustrator: #FF6700;
+  --indesign: #F564A9;
+  --bulma: #06D6A0;
+  --react: #FCF6BD;
+  --express: #EF476F;
+  --jQuery: #26547C;
+  --html: #C4CAD0;
+  --css: #00A6ED;
+  --api: #F6511D;
+}
 .inner{
   height: 100%;
   width: 100%;
@@ -16,7 +28,7 @@ p > a {
   text-decoration: underline;
 }
 
-.image > img {
+img {
   background-size: cover;
 }
 
@@ -24,16 +36,48 @@ p > a {
   margin: 10px;
   animation: fadedelay 5s linear;
 }
-
-.card > .content {
-  overflow: scroll;
+.photoshop{
+  color: var(--photoshop);
+}
+.illustrator{
+  color: var(--illustrator);
+}
+.indesign{
+  color: var(--indesign);
+}
+.bulma{
+  color: var(--bulma);
+}
+.react{
+  color: var(--react);
+}
+.express{
+  color: var(--express);
+}
+.api{
+  color: var(--api); 
+}
+.jQuery{
+  color: var(--jQuery);
+}
+.html{
+  color: var(--html);
+}
+.css{
+  color: var(--css);
+}
+.content > span{
+  margin-right: 15px;
 }
 
 @keyframes fadedelay{
   0%{
     opacity: 0;
   }
-  60%, 100%{
+  60%{
+    opacity: .5;
+  }
+  100%{
     opacity: 1;
   }
 }
@@ -42,11 +86,11 @@ p > a {
 }.inner .card:nth-child(2){
   animation-delay: -1.4s;
 }.inner .card:nth-child(3){
-  animation-delay: -1.5s;
-}.inner .card:nth-child(4){
-  animation-delay: -1.6s;
-}.inner .card:nth-child(5){
   animation-delay: -1.7s;
-}.inner .card:nth-child(6){
+}.inner .card:nth-child(4){
   animation-delay: -1.8s;
+}.inner .card:nth-child(5){
+  animation-delay: -2s;
+}.inner .card:nth-child(6){
+  animation-delay: -2.4s;
 }
