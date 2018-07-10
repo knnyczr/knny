@@ -18,7 +18,7 @@ export default function About(){
               but everyone except my mom calls me Kenny <br />
               You'll be able to find me on social media as Kenny Cruzer <br/>
               (where the name come from isn't as interesting as the things I do)
-              I'm a graphic designer and full stack developer <br/>
+              I'm a Creative Developer–or a 'unicorn'... graphic designer and full stack developer <br/>
               born, raised and working in the greater area of NYC.
               <br />
               I specialize in branding, design for social media, packaging, <br />

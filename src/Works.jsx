@@ -48,7 +48,9 @@ export default class Works extends Component{
                     <span><FontAwesome className="api" name='circle' /> API</span>
 
                 <br />
-                <p><Link to='/works/thesis'>view project nEED TO DEPLOY</Link></p>
+                <p><Link to='/works/thesis'>view project nEED TO DEPLOY</Link><br />
+                <a href="https://github.com/knnyczr/Pal_et">view GitHub</a>
+                </p>
                 <br />
               </div>
 
@@ -79,7 +81,9 @@ export default class Works extends Component{
                     <span><FontAwesome className="jQuery" name='circle' /> jQuery</span>
 
                 <br />
-                <p><a href="https://ilovehueclone.herokuapp.com/">view project NEED TO DEPLOY</a></p>
+                <p><a href="https://ilovehueclone.herokuapp.com/">view project NEED TO DEPLOY</a><br />
+                <a href="https://github.com/knnyczr/I-love-Hue">view GitHub</a>
+                </p>
                 <br />
               </div>
 
@@ -113,7 +117,10 @@ export default class Works extends Component{
                     <span><FontAwesome className="indesign" name='circle' /> InDesign</span>
 
                 <br />
-                <p><a href='https://ulogin.herokuapp.com/posts'>view project</a></p>
+                <p><a href='https://ulogin.herokuapp.com/posts'>view project</a> <br />
+                <a href="https://github.com/knnyczr/uLog">view GitHub</a>
+
+                </p>
                 <br />
               </div>
 
@@ -266,7 +273,7 @@ export default class Works extends Component{
 
               <div className="content">
                 The Spectrum is an independent student publication at the University at Buffalo campus.
-                This project features the best works I've done while Creative Director. 
+                This project features the best works I've done while Creative Director.
                 <br />
                 <br />
 
@@ -275,7 +282,9 @@ export default class Works extends Component{
                     <span><FontAwesome className="indesign" name='circle' /> InDesign</span>
 
                 <br />
-                <p><Link to='/works/spectrum'>view project</Link></p>
+                <p>
+                  <Link to='/works/spectrum'>view project</Link>
+                </p>
                 <br />
               </div>
 
