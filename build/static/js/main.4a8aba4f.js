@@ -632,9 +632,9 @@ Duplex.prototype._destroy = function (err, cb) {
 
 
 
-var base64 = __webpack_require__(132)
-var ieee754 = __webpack_require__(133)
-var isArray = __webpack_require__(134)
+var base64 = __webpack_require__(135)
+var ieee754 = __webpack_require__(136)
+var isArray = __webpack_require__(137)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -4015,7 +4015,7 @@ exports.Readable = exports;
 exports.Writable = __webpack_require__(28);
 exports.Duplex = __webpack_require__(7);
 exports.Transform = __webpack_require__(43);
-exports.PassThrough = __webpack_require__(144);
+exports.PassThrough = __webpack_require__(147);
 
 
 /***/ }),
@@ -4095,7 +4095,7 @@ util.inherits = __webpack_require__(6);
 
 /*<replacement>*/
 var internalUtil = {
-  deprecate: __webpack_require__(143)
+  deprecate: __webpack_require__(146)
 };
 /*</replacement>*/
 
@@ -4710,7 +4710,7 @@ Writable.prototype._destroy = function (err, cb) {
   this.end();
   cb(err);
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5), __webpack_require__(141).setImmediate, __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5), __webpack_require__(144).setImmediate, __webpack_require__(3)))
 
 /***/ }),
 /* 29 */
@@ -5516,7 +5516,7 @@ var pna = __webpack_require__(14);
 module.exports = Readable;
 
 /*<replacement>*/
-var isArray = __webpack_require__(137);
+var isArray = __webpack_require__(140);
 /*</replacement>*/
 
 /*<replacement>*/
@@ -5556,7 +5556,7 @@ util.inherits = __webpack_require__(6);
 /*</replacement>*/
 
 /*<replacement>*/
-var debugUtil = __webpack_require__(138);
+var debugUtil = __webpack_require__(141);
 var debug = void 0;
 if (debugUtil && debugUtil.debuglog) {
   debug = debugUtil.debuglog('stream');
@@ -5565,7 +5565,7 @@ if (debugUtil && debugUtil.debuglog) {
 }
 /*</replacement>*/
 
-var BufferList = __webpack_require__(139);
+var BufferList = __webpack_require__(142);
 var destroyImpl = __webpack_require__(41);
 var StringDecoder;
 
@@ -7716,7 +7716,7 @@ var debugs = {};
 var debugEnviron;
 exports.debuglog = function(set) {
   if (isUndefined(debugEnviron))
-    debugEnviron = Object({"NODE_ENV":"production","PUBLIC_URL":""}).NODE_DEBUG || '';
+    debugEnviron = Object({"NODE_ENV":"production","PUBLIC_URL":"","REACT_APP_API_KEY":"gXLLoKo9dOAAAAAAAAAAExKjymHSQ8h_c8luIKwlAfdDrEL3FRyIn15SvXEm13-p"}).NODE_DEBUG || '';
   set = set.toUpperCase();
   if (!debugs[set]) {
     if (new RegExp('\\b' + set + '\\b', 'i').test(debugEnviron)) {
@@ -8142,7 +8142,7 @@ function isPrimitive(arg) {
 }
 exports.isPrimitive = isPrimitive;
 
-exports.isBuffer = __webpack_require__(150);
+exports.isBuffer = __webpack_require__(153);
 
 function objectToString(o) {
   return Object.prototype.toString.call(o);
@@ -9318,7 +9318,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__registerServiceWorker__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__registerServiceWorker__ = __webpack_require__(206);
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* BrowserRouter */],null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__App__["a" /* default */],null)),document.getElementById('root'));Object(__WEBPACK_IMPORTED_MODULE_4__registerServiceWorker__["a" /* default */])();
 
 /***/ }),
@@ -13030,9 +13030,11 @@ var withRouter = function withRouter(Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_dotenv_config__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_dotenv_config___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_dotenv_config__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Main__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Nav__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_Main_css__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Nav__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_Main_css__ = __webpack_require__(204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__css_Main_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__css_Main_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_bulma_css_bulma_css__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_bulma_css_bulma_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_bulma_css_bulma_css__);
 var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var App=function(_Component){_inherits(App,_Component);function App(){_classCallCheck(this,App);return _possibleConstructorReturn(this,(App.__proto__||Object.getPrototypeOf(App)).apply(this,arguments));}_createClass(App,[{key:'render',value:function render(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'App'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Nav__["a" /* default */],null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Main__["a" /* default */],null));}}]);return App;}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);/* harmony default export */ __webpack_exports__["a"] = (App);
 
 /***/ }),
@@ -13123,8 +13125,8 @@ function config (options) {
     const parsed = parse(fs.readFileSync(dotenvPath, { encoding }))
 
     Object.keys(parsed).forEach(function (key) {
-      if (!Object({"NODE_ENV":"production","PUBLIC_URL":""}).hasOwnProperty(key)) {
-        Object({"NODE_ENV":"production","PUBLIC_URL":""})[key] = parsed[key]
+      if (!Object({"NODE_ENV":"production","PUBLIC_URL":"","REACT_APP_API_KEY":"gXLLoKo9dOAAAAAAAAAAExKjymHSQ8h_c8luIKwlAfdDrEL3FRyIn15SvXEm13-p"}).hasOwnProperty(key)) {
+        Object({"NODE_ENV":"production","PUBLIC_URL":"","REACT_APP_API_KEY":"gXLLoKo9dOAAAAAAAAAAExKjymHSQ8h_c8luIKwlAfdDrEL3FRyIn15SvXEm13-p"})[key] = parsed[key]
       }
     })
 
@@ -13383,16 +13385,16 @@ var substr = 'ab'.substr(-1) === 'b'
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Works__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__About__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__works_Posters__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__works_Thesis__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__works_Amys__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__works_Likwid__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__works_Spectrum__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__About__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__works_Posters__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__works_Thesis__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__works_Amys__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__works_Likwid__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__works_Spectrum__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_router_dom__ = __webpack_require__(12);
-var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Dropbox=__webpack_require__(198).Dropbox;var Main=function(_Component){_inherits(Main,_Component);function Main(props){_classCallCheck(this,Main);var _this=_possibleConstructorReturn(this,(Main.__proto__||Object.getPrototypeOf(Main)).call(this,props));console.log(Object({"NODE_ENV":"production","PUBLIC_URL":""}).REACT_APP_API_KEY);var dbx=new Dropbox({accessToken:Object({"NODE_ENV":"production","PUBLIC_URL":""}).REACT_APP_API_KEY});_this.state={posters:[],posterdisplays:[],dbx:dbx};_this.getdisplays=_this.getdisplays.bind(_this);_this.fetchapi=_this.fetchapi.bind(_this);_this.handlescrolling=_this.handlescrolling.bind(_this);return _this;}_createClass(Main,[{key:'fetchapi',value:function fetchapi(){var _this2=this;this.state.dbx.filesListFolder({path:"/resized"}).then(function(res){var apipics=res.entries;_this2.setState({posters:apipics});_this2.getdisplays();}).catch(function(error){return console.log(error);});}},{key:'getdisplays',value:function getdisplays(){var _this3=this;var newArray=this.state.posterdisplays.slice();this.state.posters.map(function(d,i){return _this3.state.dbx.filesGetTemporaryLink({"path":_this3.state.posters[i].path_lower}).then(function(res){newArray.push(res);_this3.setState({posterdisplays:newArray});}).catch(function(err){return console.log(err);});});}},{key:'componentWillMount',value:function componentWillMount(){this.fetchapi();}},{key:'handlescrolling',value:function handlescrolling(e){e.preventDefault();console.log('itshappening');var maininner=document.querySelector('.inner');}},{key:'render',value:function render(){var _this4=this;var posterdisplays=this.state.posterdisplays;return __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement('div',{className:'main',onScroll:function onScroll(e){return _this4.handlescrolling(e);}},__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["e" /* Switch */],null,__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/amys',component:__WEBPACK_IMPORTED_MODULE_4__works_Amys__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/posters',render:function render(){return __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__works_Posters__["a" /* default */],{displays:posterdisplays});}}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/thesis',component:__WEBPACK_IMPORTED_MODULE_3__works_Thesis__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/likwid',component:__WEBPACK_IMPORTED_MODULE_5__works_Likwid__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/spectrum',component:__WEBPACK_IMPORTED_MODULE_6__works_Spectrum__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/about',component:__WEBPACK_IMPORTED_MODULE_1__About__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/',component:__WEBPACK_IMPORTED_MODULE_0__Works__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["c" /* Redirect */],{to:'/'})));}}]);return Main;}(__WEBPACK_IMPORTED_MODULE_7_react__["Component"]);/* harmony default export */ __webpack_exports__["a"] = (Main);
+var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Dropbox=__webpack_require__(201).Dropbox;var Main=function(_Component){_inherits(Main,_Component);function Main(props){_classCallCheck(this,Main);var _this=_possibleConstructorReturn(this,(Main.__proto__||Object.getPrototypeOf(Main)).call(this,props));var dbx=new Dropbox({accessToken:"gXLLoKo9dOAAAAAAAAAAExKjymHSQ8h_c8luIKwlAfdDrEL3FRyIn15SvXEm13-p"});_this.state={posters:[],posterdisplays:[],dbx:dbx};_this.getdisplays=_this.getdisplays.bind(_this);_this.fetchapi=_this.fetchapi.bind(_this);return _this;}_createClass(Main,[{key:'fetchapi',value:function fetchapi(){var _this2=this;this.state.dbx.filesListFolder({path:"/resized"}).then(function(res){var apipics=res.entries;_this2.setState({posters:apipics});_this2.getdisplays();}).catch(function(error){return console.log(error);});}},{key:'getdisplays',value:function getdisplays(){var _this3=this;var newArray=this.state.posterdisplays.slice();this.state.posters.map(function(d,i){return _this3.state.dbx.filesGetTemporaryLink({"path":_this3.state.posters[i].path_lower}).then(function(res){newArray.push(res);_this3.setState({posterdisplays:newArray});}).catch(function(err){return console.log(err);});});}},{key:'componentWillMount',value:function componentWillMount(){this.fetchapi();}},{key:'render',value:function render(){var posterdisplays=this.state.posterdisplays;return __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement('div',{className:'main'},__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["e" /* Switch */],null,__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/amys',component:__WEBPACK_IMPORTED_MODULE_4__works_Amys__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/posters',render:function render(){return __WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__works_Posters__["a" /* default */],{displays:posterdisplays});}}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/thesis',component:__WEBPACK_IMPORTED_MODULE_3__works_Thesis__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/likwid',component:__WEBPACK_IMPORTED_MODULE_5__works_Likwid__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/works/spectrum',component:__WEBPACK_IMPORTED_MODULE_6__works_Spectrum__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/about',component:__WEBPACK_IMPORTED_MODULE_1__About__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["d" /* Route */],{path:'/',component:__WEBPACK_IMPORTED_MODULE_0__Works__["a" /* default */]}),__WEBPACK_IMPORTED_MODULE_7_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8_react_router_dom__["c" /* Redirect */],{to:'/'})));}}]);return Main;}(__WEBPACK_IMPORTED_MODULE_7_react__["Component"]);/* harmony default export */ __webpack_exports__["a"] = (Main);
 
 /***/ }),
 /* 98 */
@@ -13420,7 +13422,11 @@ var _createClass=function(){function defineProperties(target,props){for(var i=0;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_ilovehue_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__images_ilovehue_png__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_pal_et_png__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_pal_et_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__images_pal_et_png__);
-var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Works=function(_Component){_inherits(Works,_Component);function Works(props){_classCallCheck(this,Works);var _this=_possibleConstructorReturn(this,(Works.__proto__||Object.getPrototypeOf(Works)).call(this,props));_this.state={};return _this;}_createClass(Works,[{key:'render',value:function render(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'wrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'inner'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'description'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1',null,'DAILY POSTER PROJECT'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/posters'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'One poster everyday for a year to develop aesthetics, refine story telling, and share beautiful design. Each have their own narrative, a cross between fantasy and reality. Some created overlap and combine to make an overarching theme, they create mini series. All posters were created using Photoshop, and Illustrator.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'I throughout the year I felt inspired by my daily, political, and musical climate. I combine photography (provided by unsplash,) type, and color creating unique narrative.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Free download available of all the Hi-Def posters, perfect home screen for your iPhone or iPad.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Prints and other printed media available at ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'https://society6.com/kennycruzer'},'Society6'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'work',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_3__images_01232017_hero_jpg___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'description'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1',null,'BRANDING'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/likwid'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'LIKWID is a fictional cold press bottled juice company. The creative process was divided into several steps, each requiring critical solutions. The color palette as well as the typefaces were chosen based on the overall brand strategy. Each creative decision was made in hopes of company growth and recognition')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'work',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_4__images_LIKWID_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'description'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1',null,'FINE ART'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/thesis'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'(2016) Mixed media \xA0',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Experimental sculptural work for Senior Thesis show features self made benches, seven T8 lights, and printed color gradients',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Humans live solely for air, food, water, sunlight, these are your physiological needs. In Maslow\'s hierarchy of needs pyramid this is at the very bottom, the base of it all. Followed by social belonging, esteem, self actualization, and self transcendence. We all want to belong to people where we are loved, to be valued, to be more, and to live on.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'A rainbow\u2013the meteorological phenomenon is an illusion, caused by the reflection, refraction, and dispersion of light through water. Visible light is the sum of all colors. In the electromagnetic spectrum, light is a small fraction of the wavelength that shoots though the atmosphere, colors in visible light vary in wavelength, but the wavelength is seamless between colors. The continuous wavelength of light, creates a harmonious gradation between colors, as do genders and sexualities in people. We are all beams of light scattering, jumping, reflecting, Although sexuality and gender is not mutually exclusive. People are they\'re own color but we still stand together, created as equals, endlessly complimenting each other through understanding and/or self expression.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'The Pride flag is a graphical representation of how a rainbow transitions hues from red, orange, yellow, green, blue and purple.\xA0Dichotomies\xA0was a extended poster collection featuring solid stripes of color that when in order of lightness and hue captured gradience between hues.\xA0Dichotomies\xA0were meant to graphical represent sexualities, personality, and gender through time. It is a singular poster, but it represents many, there is one hue, but they are connected to many of it\'s "lightness and brightness."',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Sexual identity and gender both change thought time and space. When you were younger you probably like that band boy, now you\'re into that low fat, fit model. the Attraction changes. When you were younger you preferred sneakers, now you only wear combat boots; your expression changes. The expression in clothing is in a form the expression in your gender, your Friday night outfit, is probably sexier than your Monday morning, gotta get to work outfit.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Posters were made on 24 in x 36 in paper, these color studies expanded into lager printed posters. The posters were 8, 4.5 inch stripes of colors that sat side by side.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'This idea of stripes of color, plays an ode to the original rainbow flag from the LGBT movement. A symbol that has represented the gay community since the 1970s. Gilbert Baker, the designer for the flag had assigned each color a meaning. Later the flag had evolved into a more condensed version of six colors, losing three and gaining one.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'However once the posters printed, gradients presented an illusion of color. Since the gradient of colors were made through Adobe Illustrator they were accurate to hue, or the words of Joseph Albers, they were accurate in "nearness" in terms of "lightness, and brightness." This nearness created a glow, or radiance where the stripes touched. Although the each bar of color was a singular color, by harmoniously standing side by side they presented a "simultaneous contrast." the effected turned out to be more obvious to the viewer when a a gradient transition from warmer to lighter. (See posters 001, 003, 022, 023, 035) \xA0',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'The experimental project lend to the creation of 100 posters. \xA0')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'work',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_5__images_thesis_jpg___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'description'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1',null,'BRANDING'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/amys'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'Amy\'s Place is a local diner in localed in downtown Buffalo known for it\'s vegan/vegetarian/meat lover\'s menu. Most of it\'s menu is customizable to meet everyone\'s needs.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'From the beginning the goal was to combine the experience you get from walking into the charming diner to it\'s outdated stationaries.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'The creative process was divided into several steps, each requiring critical solutions. The color palette as well as the typefaces were chosen based on the overall brand strategy. Each creative decision was made in hopes of company growth and recognition')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'work',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_6__images_amys_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'description'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1',null,'NEWSPAPER DESIGN'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/spectrum'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'The Spectrum is an independent student publication at the University at Buffalo campus.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'It began it\'s publication in 1950, it\'s student run till this day with a full staff of incredible and enthusiastic writers, editors, photographers, advertisers, along with a amazing creative desk that was my second home. As part of the creative desk we worked closely with writers and photographers to coordinate three issues a week during the annual school year.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Full version PDFs are posted on issuu consistently they can be viewed here (Some pages include ads, these are NOT created by me)',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'These issues feature cover designs, profiles, infographs, with designs made by, or co-created by me.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'http://www.ubspectrum.com/'},'The Spectrum'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'work',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_7__images_spectrum_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'description'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1',null,'uLog'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'A "U" friendly digital space to allow it\'s user to express your "U"-ness. A blog that allows you to upload snippets of your life and both with other over stuff you love.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'This is an Express.js project. Deployed on Heroku',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'https://ulogin.herokuapp.com/posts'},'Heroku'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'https://github.com/knnyczr/uLog'},'GitHub'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'work',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_8__images_ulog_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'description'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1',null,'I love Hue'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'I love hue is the original single player game that makes puzzles out of gradients. This game is a clone of called HueClone. At the beginning of the level, the player is presented with a board made up of tiles closely spaced together. Each tile has an individual color that together with it\'s siblings make gradient. The board then is re-arranged and player has to recreate that gradient.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'http://i-love-hue.com/'},'I love Hue'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'https://github.com/knnyczr/I-love-Hue'},'GitHub'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'work',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_9__images_ilovehue_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'description'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h1',null,'Pal Et'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'This is an app for developers and designers to learn about colors, and color relationships through palettes. The app will generate a palette from an API call, the user will be able to then add the palette to a public "collection" and/or print it to get a printed version of the palette. When generating palettes, the user will also be able to lock in a color and hit randomize again, giving the user a new palette with the same locked color.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'This project uses React.js as the front end framework',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),' and Express.js as it\'s back end server.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'https://github.com/knnyczr/Pal_et'},'GitHub'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'work last',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_10__images_pal_et_png___default.a+')'}})));}}]);return Works;}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);/* harmony default export */ __webpack_exports__["a"] = (Works);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_font_awesome_css_font_awesome_min_css__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_font_awesome_css_font_awesome_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_font_awesome_css_font_awesome_min_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_react_fontawesome__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome__);
+var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Works=function(_Component){_inherits(Works,_Component);function Works(props){_classCallCheck(this,Works);var _this=_possibleConstructorReturn(this,(Works.__proto__||Object.getPrototypeOf(Works)).call(this,props));_this.state={};return _this;}_createClass(Works,[{key:'render',value:function render(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'wrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'inner'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-image'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure',{className:'image is-5by3'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/thesis'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img',{style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_10__images_pal_et_png___default.a+')'}})))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',{className:'title is-4'},'Pal Et'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'content'},'This is an educational app for developers and designers to learn about colors, and color relationships through a dynamic color picker.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'react',name:'circle'}),' React'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'express',name:'circle'}),' Express'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'bulma',name:'circle'}),' Bulma'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'api',name:'circle'}),' API'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/thesis'},'view project nEED TO DEPLOY')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null)))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-image'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure',{className:'image is-5by3'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'https://ilovehueclone.herokuapp.com/'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img',{style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_9__images_ilovehue_png___default.a+')'}})))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',{className:'title is-4'},'Hue Clone'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'content'},'I love hue is the original single player game that makes puzzles out of gradients. This game is a clone of called HueClone.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'jQuery',name:'circle'}),' jQuery'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'https://ilovehueclone.herokuapp.com/'},'view project NEED TO DEPLOY')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null)))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-image'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure',{className:'image is-5by3'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/thesis'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img',{style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_8__images_ulog_png___default.a+')'}})))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',{className:'title is-4'},'uLog'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'content'},'A "U" friendly digital space to allow it\'s user to express your "U"-ness. A blog that allows you to upload snippets of your life and both with other over stuff you love.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'express',name:'circle'}),' Express'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'bulma',name:'circle'}),' Bulma'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'indesign',name:'circle'}),' InDesign'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'https://ulogin.herokuapp.com/posts'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null)))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-image'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure',{className:'image is-5by3'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/posters'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img',{style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_3__images_01232017_hero_jpg___default.a+')'}})))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',{className:'title is-4'},'Daily Posters'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'content'},'One poster everyday for a year to develop aesthetics, refine story telling, and share beautiful design.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'photoshop',name:'circle'}),' Photoshop'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'illustrator',name:'circle'}),' Illustrator'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'indesign',name:'circle'}),' InDesign'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/posters'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null)))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-image'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure',{className:'image is-5by3'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/likwid'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img',{style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_4__images_LIKWID_png___default.a+')'}})))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',{className:'title is-4'},'BRANDING: Likwid'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'content'},'LIKWID is a fictional cold press bottled juice company. This is an experimental branding project featuring packaging design, company brand, and advertising.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'photoshop',name:'circle'}),' Photoshop'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'illustrator',name:'circle'}),' Illustrator'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/likwid'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null)))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-image'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure',{className:'image is-5by3'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/thesis'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img',{style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_5__images_thesis_jpg___default.a+')'}})))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',{className:'title is-4'},'FINE ARTS: Senior Thesis'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'content'},'(2016) Mixed media ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Experimental sculptural work for Senior Thesis show features self made benches, seven T8 lights, and printed color gradients.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'illustrator',name:'circle'}),' Illustrator'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/thesis'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null)))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-image'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure',{className:'image is-5by3'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/amys'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img',{style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_6__images_amys_png___default.a+')'}})))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',{className:'title is-4'},'BRANDING: Amy\'s Place'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'content'},'Amy\'s Place is a local diner in localed in downtown Buffalo known for it\'s vegan/vegetarian/meat lover\'s menu. Most of it\'s menu is customizable to meet everyone\'s needs.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'illustrator',name:'circle'}),' Illustrator'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'indesign',name:'circle'}),' InDesign'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/amys'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null)))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-image'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('figure',{className:'image is-5by3'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/spectrum'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img',{style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_7__images_spectrum_png___default.a+')'}})))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'card-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'media-content'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',{className:'title is-4'},'LAYOUT DESIGN: The Spectrum'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'content'},'The Spectrum is an independent student publication at the University at Buffalo campus. This project features the best works I\'ve done while Creative Director.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'photoshop',name:'circle'}),' Photoshop'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'illustrator',name:'circle'}),' Illustrator'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_12_react_fontawesome___default.a,{className:'indesign',name:'circle'}),' InDesign'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/works/spectrum'},'view project')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null))))));}}]);return Works;}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);/* harmony default export */ __webpack_exports__["a"] = (Works);
 
 /***/ }),
 /* 99 */
@@ -13472,218 +13478,393 @@ module.exports = __webpack_require__.p + "static/media/pal_et.229d4780.png";
 
 /***/ }),
 /* 107 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(2);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _screenReaderStyles = __webpack_require__(109);
+
+var _screenReaderStyles2 = _interopRequireDefault(_screenReaderStyles);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * A React component for the font-awesome icon library.
+ *
+ * @param {String} [ariaLabel] An extra accessibility label to put on the icon
+ * @param {Boolean} [border=false] Whether or not to show a border radius
+ * @param {String} [className] An extra set of CSS classes to add to the component
+ * @param {Object} [cssModule] Option to pass FontAwesome CSS as a module
+ * @param {Boolean} [fixedWidth=false] Make buttons fixed width
+ * @param {String} [flip=false] Flip the icon's orientation.
+ * @param {Boolean} [inverse=false]Inverse the icon's color
+ * @param {String} name Name of the icon to use
+ * @param {Boolean} [pulse=false] Rotate icon with 8 steps, rather than smoothly
+ * @param {Number} [rotate] The degress to rotate the icon by
+ * @param {String} [size] The icon scaling size
+ * @param {Boolean} [spin=false] Spin the icon
+ * @param {String} [stack] Stack an icon on top of another
+ * @param {String} [tag=span] The HTML tag to use as a string, eg 'i' or 'em'
+ * @module FontAwesome
+ * @type {ReactClass}
+ */
+var FontAwesome = function (_React$Component) {
+  _inherits(FontAwesome, _React$Component);
+
+  function FontAwesome() {
+    _classCallCheck(this, FontAwesome);
+
+    var _this = _possibleConstructorReturn(this, (FontAwesome.__proto__ || Object.getPrototypeOf(FontAwesome)).call(this));
+
+    _this.displayName = 'FontAwesome';
+    return _this;
+  }
+
+  _createClass(FontAwesome, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props,
+          border = _props.border,
+          cssModule = _props.cssModule,
+          className = _props.className,
+          fixedWidth = _props.fixedWidth,
+          flip = _props.flip,
+          inverse = _props.inverse,
+          name = _props.name,
+          pulse = _props.pulse,
+          rotate = _props.rotate,
+          size = _props.size,
+          spin = _props.spin,
+          stack = _props.stack,
+          _props$tag = _props.tag,
+          tag = _props$tag === undefined ? 'span' : _props$tag,
+          ariaLabel = _props.ariaLabel,
+          props = _objectWithoutProperties(_props, ['border', 'cssModule', 'className', 'fixedWidth', 'flip', 'inverse', 'name', 'pulse', 'rotate', 'size', 'spin', 'stack', 'tag', 'ariaLabel']);
+
+      var classNames = [];
+
+      if (cssModule) {
+        classNames.push(cssModule['fa']);
+        classNames.push(cssModule['fa-' + name]);
+        size && classNames.push(cssModule['fa-' + size]);
+        spin && classNames.push(cssModule['fa-spin']);
+        pulse && classNames.push(cssModule['fa-pulse']);
+        border && classNames.push(cssModule['fa-border']);
+        fixedWidth && classNames.push(cssModule['fa-fw']);
+        inverse && classNames.push(cssModule['fa-inverse']);
+        flip && classNames.push(cssModule['fa-flip-' + flip]);
+        rotate && classNames.push(cssModule['fa-rotate-' + rotate]);
+        stack && classNames.push(cssModule['fa-stack-' + stack]);
+      } else {
+        classNames.push('fa');
+        classNames.push('fa-' + name);
+        size && classNames.push('fa-' + size);
+        spin && classNames.push('fa-spin');
+        pulse && classNames.push('fa-pulse');
+        border && classNames.push('fa-border');
+        fixedWidth && classNames.push('fa-fw');
+        inverse && classNames.push('fa-inverse');
+        flip && classNames.push('fa-flip-' + flip);
+        rotate && classNames.push('fa-rotate-' + rotate);
+        stack && classNames.push('fa-stack-' + stack);
+      }
+
+      // Add any custom class names at the end.
+      className && classNames.push(className);
+      return _react2.default.createElement(tag, _extends({}, props, { 'aria-hidden': true, className: classNames.join(' ') }), ariaLabel ? _react2.default.createElement('span', { style: _screenReaderStyles2.default }, ariaLabel) : null);
+    }
+  }]);
+
+  return FontAwesome;
+}(_react2.default.Component);
+
+FontAwesome.propTypes = {
+  ariaLabel: _propTypes2.default.string,
+  border: _propTypes2.default.bool,
+  className: _propTypes2.default.string,
+  cssModule: _propTypes2.default.object,
+  fixedWidth: _propTypes2.default.bool,
+  flip: _propTypes2.default.oneOf(['horizontal', 'vertical']),
+  inverse: _propTypes2.default.bool,
+  name: _propTypes2.default.string.isRequired,
+  pulse: _propTypes2.default.bool,
+  rotate: _propTypes2.default.oneOf([90, 180, 270]),
+  size: _propTypes2.default.oneOf(['lg', '2x', '3x', '4x', '5x']),
+  spin: _propTypes2.default.bool,
+  stack: _propTypes2.default.oneOf(['1x', '2x']),
+  tag: _propTypes2.default.string
+};
+
+exports.default = FontAwesome;
+module.exports = exports['default'];
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = {
+  position: 'absolute',
+  width: '1px',
+  height: '1px',
+  padding: '0px',
+  margin: '-1px',
+  overflow: 'hidden',
+  clip: 'rect(0px, 0px, 0px, 0px)',
+  border: '0px'
+};
+module.exports = exports['default'];
+
+/***/ }),
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = About;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_About_css__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_About_css__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_About_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_About_css__);
 function About(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'wrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'aboutwrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'about'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'photo'}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,'who?'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'I\'m Kenneth Cruz, but everyone except my mom calls me Kenny ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'You\'ll be able to find me on social media as Kenny Cruzer ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'(where the name come from isn\'t as interesting as the things I do) I\'m a graphic designer and full stack developer ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'born, raised and working in the greater area of NYC.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'I specialize in branding, design for social media, packaging, ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'visual communication for brands, and full stack applications for clients.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span',null,'Languages/Technologies/Frameworks'),' ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'English',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Spanish',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Italian',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Abobe Photoshop CC ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Abobe Illustrator CC ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Abobe InDesign CC ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Abobe Dreamweaver CC ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Abobe Muse CC ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'HTML5 ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'CSS3 ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'SCSS ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'JavaScript ES6',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Ruby ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'jQuery ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Express.js ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Node.js ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'React.js ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Rails ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Bulma ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Bootstrap ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'mailto:kenny@knnyczr.com'},' kenny@knnyczr.com '))));}
 
 /***/ }),
-/* 108 */
+/* 111 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 109 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = Posters;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_posters_css__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_posters_css__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_posters_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_posters_css__);
 function Posters(props){var posterdisplays=props.displays;return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'wrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'innerposters'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'aboutposters'},'One poster everyday for a year to develop aesthetics, refine story telling, and share beautiful design.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Each have their own narrative, a cross between fantasy and reality. Some created overlap and combine to make an overarching theme, they create mini series. All posters were created using Photoshop, and Illustrator. I throughout the year I felt inspired by my daily, political, and musical climate. I combine photography (provided by unsplash) typograpghy, and color creating unique narrative.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Free download available of all the Hi-Def posters, perfect home screen for your iPhone or IPad.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Prints and other printed media available at Society6 Go show off that new phone case or free wallpaper (tap and hold to save a poster)'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'posterscontent'},posterdisplays.map(function(d,i){// console.log(d)
 return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{key:i,className:'posterclass',style:{backgroundImage:'url('+d.link+')'}});}))));}
 
 /***/ }),
-/* 110 */
+/* 113 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 111 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = Thesis;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_thesis_css__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_thesis_css__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_thesis_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_thesis_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_thesis_hero_jpg__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_thesis_hero_jpg__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_thesis_hero_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_thesis_hero_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_thesis_lights_jpg__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_thesis_lights_jpg__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_thesis_lights_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_thesis_lights_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_thesis_dico_jpg__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_thesis_dico_jpg__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_thesis_dico_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_thesis_dico_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_thesis_001_png__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_thesis_001_png__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_thesis_001_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_thesis_001_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_thesis_003_png__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_thesis_003_png__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_thesis_003_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_thesis_003_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_thesis_008_png__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_thesis_008_png__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_thesis_008_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_thesis_008_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_thesis_009_png__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_thesis_009_png__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_thesis_009_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_thesis_009_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_thesis_010_jpg__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_thesis_010_jpg__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_thesis_010_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__images_thesis_010_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_thesis_011_png__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_thesis_011_png__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_thesis_011_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__images_thesis_011_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_thesis_017_png__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_thesis_017_png__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_thesis_017_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__images_thesis_017_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_thesis_022_png__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_thesis_022_png__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_thesis_022_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__images_thesis_022_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_thesis_023_png__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_thesis_023_png__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_thesis_023_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__images_thesis_023_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__images_thesis_035_png__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__images_thesis_035_png__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__images_thesis_035_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__images_thesis_035_png__);
 function Thesis(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'wrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'innerthesis'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'aboutthesis'},'THESIS PROJECT',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'(2016) Mixed media',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Experimental sculptural work for Senior Thesis show features self made benches, seven T8 lights, and printed color gradients.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Humans live solely for air, food, water, sunlight, these are your physiological needs. In Maslow\'s hierarchy of needs pyramid this is at the very bottom, the base of it all. Followed by social belonging, esteem, self actualization, and self transcendence. We all want to belong to people where we are loved, to be valued, to be more, and to live on.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'A rainbow\u2013the meteorological phenomenon is an illusion, caused by the reflection, refraction, and dispersion of light through water. Visible light is the sum of all colors. In the electromagnetic spectrum, light is a small fraction of the wavelength that shoots though the atmosphere, colors in visible light vary in wavelength, but the wavelength is seamless between colors. The continuous wavelength of light, creates a harmonious gradation between colors, as do genders and sexualities in people. We are all beams of light scattering, jumping, reflecting, Although sexuality and gender is not mutually exclusive. People are they\'re own color but we still stand together, created as equals, endlessly complimenting each other through understanding and/or self expression.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'The Pride flag is a graphical representation of how a rainbow transitions hues from red, orange, yellow, green, blue and purple.\xA0 Dichotomies\xA0was a extended poster collection featuring solid stripes of color that when in order of lightness and hue captured gradience between hues.\xA0 Dichotomies\xA0were meant to graphical represent sexualities, personality, and gender through time. It is a singular poster, but it represents many, there is one hue, but they are connected to many of it\'s "lightness and brightness." Sexual identity and gender both change thought time and space. When you were younger you probably like that band boy, now you\'re into that low fat, fit model, the Attraction changes. When you were younger you preferred sneakers, now you only wear combat boots; your expression changes. The expression in clothing is in a form the expression in your gender, your Friday night outfit, is probably sexier than your Monday morning, gotta get to work outfit. Posters were made on 24 in x 36 in paper, these color studies expanded into lager printed posters. The posters were 8, 4.5 inch stripes of colors that sat side by side.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'This idea of stripes of color, plays an ode to the original rainbow flag from the LGBT movement. A symbol that has represented the gay community since the 1970s. Gilbert Baker, the designer for the flag had assigned each color a meaning. Later the flag had evolved into a more condensed version of six colors, losing three and gaining one. However once the posters printed, gradients presented an illusion of color. Since the gradient of colors were made through Adobe Illustrator they were accurate to hue, or the words of Joseph Albers, they were accurate in "nearness" in terms of "lightness, and brightness." This nearness created a glow, or radiance where the stripes touched. Although the each bar of color was a singular color, by harmoniously standing side by side they presented a "simultaneous contrast." The effected turned out to be more obvious to the viewer when a a gradient transition from warmer to lighter. (See posters 001, 003, 022, 023, 035) \xA0 The experimental project lend to the creation of 100 posters.'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'thesiscontent'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'images',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_2__images_thesis_hero_jpg___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'images',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_3__images_thesis_lights_jpg___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'images',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_4__images_thesis_dico_jpg___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposters'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_5__images_thesis_001_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #001')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_6__images_thesis_003_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #003')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_7__images_thesis_008_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #008')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_8__images_thesis_009_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #009')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_9__images_thesis_010_jpg___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #010')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_10__images_thesis_011_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #011')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_11__images_thesis_017_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #017')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_12__images_thesis_022_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #022')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_13__images_thesis_023_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #023')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'miniposter',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_14__images_thesis_035_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'POSTER #035'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'images',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_4__images_thesis_dico_jpg___default.a+')'}}))));}
 
 /***/ }),
-/* 112 */
+/* 115 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 113 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/media/hero.686d8d35.jpg";
 
 /***/ }),
-/* 114 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/media/lights.523e71ad.jpg";
 
 /***/ }),
-/* 115 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/media/dico.21bb402e.jpg";
 
 /***/ }),
-/* 116 */
+/* 119 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ0AAAGfCAMAAAByYndyAAAAYFBMVEX/zjz+yEH7u036q1/5qmD5qWD5pWX4nmj4m2n3mWr3l2z2lmv2i3D1iHH1h3H0h3H0fnTydnbydXbydXXycnfyZHjxZHfxYXjxXnjxW3nvUXvvSnvvSHztLnvtHXztFXwOs0yLAAAAIHRSTlP///3///////////3////+//z/////+/////7///v//74+STQAAAItSURBVHja7dDJAYJAEACwBREFBeT0Qu2/SzsYHnyTEpKyDSkvj6HicKqr0PnStU3oepuG0Ngvj3tofq7v2Ovz+25INmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNnZv/AG3VtlY7CIcDgAAAABJRU5ErkJggg=="
 
 /***/ }),
-/* 117 */
+/* 120 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAGgCAMAAABseXkJAAAA7VBMVEXvA3btAnXsDHfsC3fqC3bqCnbnGnrlGXjaQn/YQX3XR4HXRoHVTILVRn/VRX/TS4DOUobMUYXGXovGXYrEX4vCXorBY42/Yoy0bZK0bJGza5GxcZOwcJKvcpSvcZSvcZOuc5WucZOucZOucZOucZKucJOucJOucJKtcpStcJKsdZWsdJSrc5SbfZyafJqZf52Yf52YfZuXgJ6XfpuWf5ySgp+QgZ2Fi6SDiqKAjKV+i6N9jaZ8jKRxkahvkKZnlKtmk6lilaxhlaxhlKpglKpcl61blqs3nLI2mrApnrQonrQonLInnLIgn7UfnbN4LcJ4AAAAT3RSTlP//v///v7//v/+/////v7+//7////+//7///v//v/////+/fz8/fz7/vv///n//v///v/+/v/+//7//v/+//7//v///v7//v/+///+/v/+Y026sAAAAn1JREFUeNrt0DdCwgAUANAoFqzYu4GoiRVU7L1gb/c/jhkcnP7I9N4RXvIRe/9+vXt4DD3fnF3Erk6aB6H2fmN5NbSzMD0Tm5uojoSGRweS3kos0aFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KFDhw4dOnTo0KGjSx1pmtb/2V3sTsdX7PPn7b7zFHq5Pb+MXZ+2jkLHh1srWZbleb5W2iitF0WxXdr8s7c0NRubnxwaD43VBnv6+mO/asEOBd8+AxkAAAAASUVORK5CYII="
 
 /***/ }),
-/* 118 */
+/* 121 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAGdCAMAAADQaL1HAAAAYFBMVEX////oRSjkTyjkTijkTSnkTCnbZyvaZizTdyvTdivReSzQeizQeSzNgS3NgC29mDS9ljS4nDW4nDS4mza4mjW3nDW3mjW1oDa1njarqDqrqDmatj2ZuD2Vuz6UvT7oSCdh6dEHAAAAAXRSTlMAQObYZgAAAi1JREFUeNrt0MkRglAUAEFAROGzCApuqPlnaQaPK4eeBKaqs/dGn9cwj1H3qalTVNtXv0MRV8Yd81PXhpNzuj5uUcvl+V03ymDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDBgwYMGDAgAEDxu4w/ohNoq93k0OzAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 119 */
+/* 122 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAGZCAMAAACt0DQVAAAA6lBMVEX02Sv02Sry2C3y1yry1ynw1izgz0/gzk/ezVLezU7ezE7dzVPcy1HbzFfby1LZylbMxWrKxG3Kw2nJxG3Iw2/Hw3DGwW7FwW/EwXTCv3O6v3+6v366vn22voW0vYSzvIizvIeyu4eyu4eyu4eyu4eyu4axu4exuoexuoawu4ywu4uvuoqouZKnuJCht5mftZedtZubs5matJ6YspyUsaKSr6CIq6qHqaiEqqyDqKqBqa5/qbB/p6x+p65wprpvpLhrpbxqpb1qo7ppo7topL5npb5norxmo7xFns5EnMxDns9CndBCnM1Bm87eqUhWAAAATnRSTlP////+/v7////+/v/+//7+///+/////v7//v///P/+///+/fz7/P77+///+f/+//7//v/+//7//v/+///+/v/+///+/v///v7//v///v5hSrtpAAACa0lEQVR42u3Q2TZCARQA0BuZZc6cjLnIEEkIGSJD//87bsuLp7OWF097f8JOurHPj859O/L4cttohm7qJ2eh82qpHDpYnS1GFpZnhkcnIoWRJDcQS0yYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMGHChAkTJkyYMPG3ic1fDtf+Y+I91vt6e3iKPL/eXV2HWpentdDF8UalsrX9Yy+zk0nTdD+z23e0Pr8UWVyZG5ucikyPD+aHYt/0qiGWR+HddwAAAABJRU5ErkJggg=="
 
 /***/ }),
-/* 120 */
+/* 123 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/jpeg;base64,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"
 
 /***/ }),
-/* 121 */
+/* 124 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ0AAAGfCAMAAAByYndyAAAAXVBMVEXwPTrvQSrvQSfvPT7vPDvvNkXvM0fvL1PvLVXuNEnuM0vuLlXtQjHtMVbtK1vtJ2DsNkvsKGHsJ2PsHm3rK2LrImvrIGzrHW7rFXTrEnXrEXbpJWvpEHzpCX/pB4GOazRUAAAAH3RSTlP////////////////+/////v/////////////+////Nr6lSAAAAixJREFUeNrt0FsCQlAUAMBLJb2QQhT7X2Y7OPfD78wSJq0Z2+8zx5ZpGEOv77t9hvrmfAvVj666hK6ndIwd7mWRkWzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzs3vgDDS4u8EaweY0AAAAASUVORK5CYII="
 
 /***/ }),
-/* 122 */
+/* 125 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAGZCAMAAACt0DQVAAAAaVBMVEXYbKfXb6fXa6bGjqXFkKXFjKPEkaXClaW2pqW1qaSyrKSyq6SvsKSguZ6dw52Yw52Ux5yKw5+Bx556w6B1w6BouaNVrKtOqa1Nqa1HpK5Epq8imrchmLgfl7kflbcblrkXhcIWg8MVg8FYQBB/AAAAI3RSTlP///v///n////9////+f/////////5/////f/////8/////SuB9H8AAAIhSURBVHja7dDJEYJQFACwr6AgiGyCuC/9F0kH7+5MUkLSJ/b9ve6PyPN9m5dL5DoNY+jcn9pQ1xyqSH0ss3wfKXbbtIklEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmDBhwoQJEyZMmPiTiRU6n8JdEflCQAAAAABJRU5ErkJggg=="
 
 /***/ }),
-/* 123 */
+/* 126 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQsAAAGbCAMAAADk7UUjAAAA1VBMVEX2t5j0tZfzt5nxtZjquZ3ot5vmuZ3kup/kt5viuqDiuJ3hu6LguJ7fuaDWvqrWvqnVvqrUvqrUvKjTv6zTvKjSvKjRvarIwK/Iv67GwK/Gvq3Gva3Fv67Fv67Fvq7Fvq3EwLDEv67Ev67Evq7Cvq/AwrO+wLG8xLa6wrS5xLe3xbm3wrW2xbi1w7e0w7aoxb6mxr+lxr+lw7ykxr+kxL2jxL2ixL2YyseXy8eXyMWWycWUy8iTycaRzMqQysiNzMuLysl+zNB9zNB9ys58ys57zNF6ys/XaiKiAAAAR3RSTlP//v/+//7///7//v/+/v/////+//7+/v////r+/fz7+//+/f75//7//v///v/+/v////7//v7+///+/v/+//7//v///v7//p8kTz0AAAJmSURBVHja7dDZOgIBGADQESIREsJoVISyFmVrseT9H4kLbv/u+855hJO8xz6m46fX0HBwe3cf6fWuzi9D7bPqQehkv1TaimzvFPMrocJSkpshceHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4cOHChQsXLly4mOeLz9jX9+TlLTR67j48Rvr9m4tO6Lp11GzWG7/SND3+l2VZ7c/p4Wa5Etnd21hdC60vLyzO8APX8V/1hLGYWQAAAABJRU5ErkJggg=="
 
 /***/ }),
-/* 124 */
+/* 127 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ8AAAGiCAMAAADOc7M8AAAA4VBMVEVzzNFyys9wytBvyM5tyc9sx81hwMlgvsddvsdcvsdcvMVbvMVXu8RWucJGsbxFr7pDsLtCr7tCrrlBrblArrk/rLc8rbk7q7cvqbUup7Mtp7Qsp7QspbIrpbIqprMppLElo7EkobAeoK8dn64dnq0cn64cnq4cnq0cnq0cnq0cna0bn60bnq0bnq0bnq0bnqwbna0bna0anawamaoamakZmakZl6gYlqcYlqYYlaYXlaYXlaUXlaUUkaIUj6ITkKATj6ETjqASjqASjp8RjZ4NiJsMh5oMh5kLhpkLhpgKhZczv6q9AAAAS3RSTlP//v/+//7//v///v7//v/+///+/v/+//7//v///v7//v/+///+///9/Pv8+f/9+vv8+/7///3///7////+///+//7//v7///7//v7e6b/6AAACgElEQVR42u3QRVLEUBQAwOCEIIO7DRlcEtzd738g/poqXnasuo/QWXeDrDfPByN5//DUeCs0OrOyuBCaW9vfiLVPry9i53fPj7H7t8/3BpkPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDhw4cPHz58+PDx+6Pzh82kc3L1Lx89Dbr6imIoUgyMTE9OhMZmV5eXQvPrx2VZHiRbSVVVu8n2UbKT1HV9uHd2cxu7fHh9iT19fH81+AFoIdXxBL0+4AAAAABJRU5ErkJggg=="
 
 /***/ }),
-/* 125 */
+/* 128 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM4AAAE9CAMAAAB0sK31AAAAk1BMVEXpVyrlWC3gWjLfWjLQYEDPYEDMYULLYULKYkTJYkTCY0nBY0m6ZU65ZU+3ZVC2ZVC0ZlKzZlKlaF2kZ1ygaWCfaWGfaGCfaGCfaF+eaWKeaGCeaGCeaGCeZ1+daGCbamObaWKaaGKQbGyNbG2MbG6LbG+GbHF4bXl0bXtybXxobYJebYhbbYlXbYtFbpI9bpU4bpf+5GPIAAAAMXRSTlP//////////////////////////P////3+//79/P38///7////////////////////tWxCwAAAAWlJREFUeNrtzzeOwlAAQEGTc2YN2NjkuLvA/U+HoP5ukZDmFa+f6F7Q4/b7F+7/ejqHuxy3+2CH3WL6E2w17vbDDdvVerhmOSoVFOHg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4HyOE8fx+ks58yTJsjRNs/dny1d5nm8mvUG4UafWCNeqFHKe37QXLE2pR5AAAAAASUVORK5CYII="
 
 /***/ }),
-/* 126 */
+/* 129 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = Amys;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Amys_css__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Amys_css__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Amys_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_Amys_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_amys_hero_jpg__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_amys_hero_jpg__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_amys_hero_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_amys_hero_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_amys_stationary_png__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_amys_stationary_png__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_amys_stationary_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_amys_stationary_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Viewer__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Viewer__ = __webpack_require__(133);
 function Amys(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'wrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'amysinner'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'aboutamys'},'Amy\'s Place is a local diner in localed in downtown Buffalo known for it\'s vegan/vegetarian/meat lover\'s menu. Most of it\'s menu is customizable to meet everyone\'s needs. From the beginning the goal was to combine the experience you get from walking into the charming diner to it\'s outdated stationaries. The creative process was divided into several steps, each requiring critical solutions. The color palette as well as the typefaces were chosen based on the overall brand strategy.'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'amyscontent'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'amysimages',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_2__images_amys_hero_jpg___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'amysimages',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_3__images_amys_stationary_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Viewer__["a" /* default */],null))));}
 
 /***/ }),
-/* 127 */
+/* 130 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 128 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/media/hero.b1027c8e.jpg";
 
 /***/ }),
-/* 129 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/media/stationary.f1c02f6c.png";
 
 /***/ }),
-/* 130 */
+/* 133 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_pdf_js__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_amys_identity_guide_pdf__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_pdf_js__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_amys_identity_guide_pdf__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_amys_identity_guide_pdf___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_amys_identity_guide_pdf__);
 var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Viewer=function(_Component){_inherits(Viewer,_Component);function Viewer(){var _ref;var _temp,_this,_ret;_classCallCheck(this,Viewer);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=Viewer.__proto__||Object.getPrototypeOf(Viewer)).call.apply(_ref,[this].concat(args))),_this),_this.state={},_this.onDocumentComplete=function(pages){_this.setState({page:1,pages:pages});},_this.handlePrevious=function(){_this.setState({page:_this.state.page-1});},_this.handleNext=function(){_this.setState({page:_this.state.page+1});},_this.renderPagination=function(page,pages){var previousButton=__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li',{className:'previous',onClick:_this.handlePrevious},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'#'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i',{className:'fa fa-arrow-left'}),' Previous Page  '));if(page===1){previousButton=__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li',{className:'previous disabled'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'#'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i',{className:'fa fa-arrow-left'}),' Previous Page  '));}var nextButton=__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li',{className:'next',onClick:_this.handleNext},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'#'},'Next Page  ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i',{className:'fa fa-arrow-right'})));if(page===pages){nextButton=__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li',{className:'next disabled'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'#'},'Next Page  ',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i',{className:'fa fa-arrow-right'})));}return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ul',{className:'pager'},previousButton,nextButton));},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(Viewer,[{key:'render',value:function render(){var pagination=null;if(this.state.pages){pagination=this.renderPagination(this.state.page,this.state.pages);}return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_pdf_js__["a" /* default */],{file:__WEBPACK_IMPORTED_MODULE_2__images_amys_identity_guide_pdf___default.a,onDocumentComplete:this.onDocumentComplete,page:this.state.page,className:'amysimages'}),pagination);}}]);return Viewer;}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);/* harmony default export */ __webpack_exports__["a"] = (Viewer);
 
 /***/ }),
-/* 131 */
+/* 134 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global, Buffer, process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_zlib__ = __webpack_require__(135);
+/* WEBPACK VAR INJECTION */(function(global, Buffer, process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_zlib__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_zlib___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_zlib__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_url__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_url__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_url___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_url__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
@@ -75994,7 +76175,7 @@ ReactPdfJs.defaultProps = {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3), __webpack_require__(8).Buffer, __webpack_require__(5)))
 
 /***/ }),
-/* 132 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76152,7 +76333,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 133 */
+/* 136 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -76242,7 +76423,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 134 */
+/* 137 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -76253,15 +76434,15 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 135 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var Buffer = __webpack_require__(8).Buffer;
-var Transform = __webpack_require__(136).Transform;
-var binding = __webpack_require__(149);
+var Transform = __webpack_require__(139).Transform;
+var binding = __webpack_require__(152);
 var util = __webpack_require__(45);
 var assert = __webpack_require__(44).ok;
 var kMaxLength = __webpack_require__(8).kMaxLength;
@@ -76869,7 +77050,7 @@ util.inherits(Unzip, Zlib);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 136 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright Joyent, Inc. and other Node contributors.
@@ -76900,10 +77081,10 @@ var inherits = __webpack_require__(6);
 
 inherits(Stream, EE);
 Stream.Readable = __webpack_require__(27);
-Stream.Writable = __webpack_require__(145);
-Stream.Duplex = __webpack_require__(146);
-Stream.Transform = __webpack_require__(147);
-Stream.PassThrough = __webpack_require__(148);
+Stream.Writable = __webpack_require__(148);
+Stream.Duplex = __webpack_require__(149);
+Stream.Transform = __webpack_require__(150);
+Stream.PassThrough = __webpack_require__(151);
 
 // Backwards-compat with node 0.4.x
 Stream.Stream = Stream;
@@ -77002,7 +77183,7 @@ Stream.prototype.pipe = function(dest, options) {
 
 
 /***/ }),
-/* 137 */
+/* 140 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -77013,13 +77194,13 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 138 */
+/* 141 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
-/* 139 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77028,7 +77209,7 @@ module.exports = Array.isArray || function (arr) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Buffer = __webpack_require__(15).Buffer;
-var util = __webpack_require__(140);
+var util = __webpack_require__(143);
 
 function copyBuffer(src, target, offset) {
   src.copy(target, offset);
@@ -77104,13 +77285,13 @@ if (util && util.inspect && util.inspect.custom) {
 }
 
 /***/ }),
-/* 140 */
+/* 143 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
-/* 141 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -77166,7 +77347,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(142);
+__webpack_require__(145);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -77180,7 +77361,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 142 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -77373,7 +77554,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3), __webpack_require__(5)))
 
 /***/ }),
-/* 143 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {
@@ -77447,7 +77628,7 @@ function config (name) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 144 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77500,35 +77681,35 @@ PassThrough.prototype._transform = function (chunk, encoding, cb) {
 };
 
 /***/ }),
-/* 145 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(28);
 
 
 /***/ }),
-/* 146 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(7);
 
 
 /***/ }),
-/* 147 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(27).Transform
 
 
 /***/ }),
-/* 148 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(27).PassThrough
 
 
 /***/ }),
-/* 149 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77537,10 +77718,10 @@ module.exports = __webpack_require__(27).PassThrough
 
 var assert = __webpack_require__(44);
 
-var Zstream = __webpack_require__(151);
-var zlib_deflate = __webpack_require__(152);
-var zlib_inflate = __webpack_require__(155);
-var constants = __webpack_require__(158);
+var Zstream = __webpack_require__(154);
+var zlib_deflate = __webpack_require__(155);
+var zlib_inflate = __webpack_require__(158);
+var constants = __webpack_require__(161);
 
 for (var key in constants) {
   exports[key] = constants[key];
@@ -77944,7 +78125,7 @@ exports.Zlib = Zlib;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8).Buffer, __webpack_require__(5)))
 
 /***/ }),
-/* 150 */
+/* 153 */
 /***/ (function(module, exports) {
 
 module.exports = function isBuffer(arg) {
@@ -77955,7 +78136,7 @@ module.exports = function isBuffer(arg) {
 }
 
 /***/ }),
-/* 151 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78009,7 +78190,7 @@ module.exports = ZStream;
 
 
 /***/ }),
-/* 152 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78035,10 +78216,10 @@ module.exports = ZStream;
 // 3. This notice may not be removed or altered from any source distribution.
 
 var utils   = __webpack_require__(16);
-var trees   = __webpack_require__(153);
+var trees   = __webpack_require__(156);
 var adler32 = __webpack_require__(46);
 var crc32   = __webpack_require__(47);
-var msg     = __webpack_require__(154);
+var msg     = __webpack_require__(157);
 
 /* Public constants ==========================================================*/
 /* ===========================================================================*/
@@ -79890,7 +80071,7 @@ exports.deflateTune = deflateTune;
 
 
 /***/ }),
-/* 153 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81117,7 +81298,7 @@ exports._tr_align = _tr_align;
 
 
 /***/ }),
-/* 154 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81156,7 +81337,7 @@ module.exports = {
 
 
 /***/ }),
-/* 155 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81184,8 +81365,8 @@ module.exports = {
 var utils         = __webpack_require__(16);
 var adler32       = __webpack_require__(46);
 var crc32         = __webpack_require__(47);
-var inflate_fast  = __webpack_require__(156);
-var inflate_table = __webpack_require__(157);
+var inflate_fast  = __webpack_require__(159);
+var inflate_table = __webpack_require__(160);
 
 var CODES = 0;
 var LENS = 1;
@@ -82719,7 +82900,7 @@ exports.inflateUndermine = inflateUndermine;
 
 
 /***/ }),
-/* 156 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83071,7 +83252,7 @@ module.exports = function inflate_fast(strm, start) {
 
 
 /***/ }),
-/* 157 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83421,7 +83602,7 @@ module.exports = function inflate_table(type, lens, lens_index, codes, table, ta
 
 
 /***/ }),
-/* 158 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83496,7 +83677,7 @@ module.exports = {
 
 
 /***/ }),
-/* 159 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83523,8 +83704,8 @@ module.exports = {
 
 
 
-var punycode = __webpack_require__(160);
-var util = __webpack_require__(162);
+var punycode = __webpack_require__(163);
+var util = __webpack_require__(165);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -83599,7 +83780,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = __webpack_require__(163);
+    querystring = __webpack_require__(166);
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -84235,7 +84416,7 @@ Url.prototype.parseHost = function() {
 
 
 /***/ }),
-/* 160 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -84771,10 +84952,10 @@ Url.prototype.parseHost = function() {
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(161)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(164)(module), __webpack_require__(3)))
 
 /***/ }),
-/* 161 */
+/* 164 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -84802,7 +84983,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 162 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84825,18 +85006,18 @@ module.exports = {
 
 
 /***/ }),
-/* 163 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(164);
-exports.encode = exports.stringify = __webpack_require__(165);
+exports.decode = exports.parse = __webpack_require__(167);
+exports.encode = exports.stringify = __webpack_require__(168);
 
 
 /***/ }),
-/* 164 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -84927,7 +85108,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 165 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -85019,44 +85200,44 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 166 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/media/identity_guide.9d67337d.pdf";
 
 /***/ }),
-/* 167 */
+/* 170 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = Likwid;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Likwid_css__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Likwid_css__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Likwid_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_Likwid_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_likwid_likwid_lander_gif__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_likwid_likwid_lander_gif__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_likwid_likwid_lander_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_likwid_likwid_lander_gif__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_likwid_likwid_lander_4_png__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_likwid_likwid_lander_4_png__ = __webpack_require__(173);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_likwid_likwid_lander_4_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_likwid_likwid_lander_4_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_likwid_likwid_lander_2_png__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_likwid_likwid_lander_2_png__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_likwid_likwid_lander_2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_likwid_likwid_lander_2_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_likwid_likwid_lander_3_jpg__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_likwid_likwid_lander_3_jpg__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_likwid_likwid_lander_3_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_likwid_likwid_lander_3_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_likwid_likwid_lander_5_gif__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_likwid_likwid_lander_5_gif__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_likwid_likwid_lander_5_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_likwid_likwid_lander_5_gif__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_likwid_likwid_lander_6_gif__ = __webpack_require__(174);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_likwid_likwid_lander_6_gif__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_likwid_likwid_lander_6_gif___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_likwid_likwid_lander_6_gif__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_likwid_package_2_png__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_likwid_package_2_png__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_likwid_package_2_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_likwid_package_2_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_likwid_businesscards_png__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_likwid_businesscards_png__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_likwid_businesscards_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__images_likwid_businesscards_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_likwid_likwid_color_jpg__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_likwid_likwid_color_jpg__ = __webpack_require__(180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_likwid_likwid_color_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__images_likwid_likwid_color_jpg__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_likwid_tape_packaging_jpg__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_likwid_tape_packaging_jpg__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_likwid_tape_packaging_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__images_likwid_tape_packaging_jpg__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_LIKWID_png__ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_LIKWID_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__images_LIKWID_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_likwid_likwid_png__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_likwid_likwid_png__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_likwid_likwid_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__images_likwid_likwid_png__);
 // import pineberry from '../images/likwid/pineberry_bottle.png';
 // import sweetrasphberry from '../images/likwid/sweetrasphberry.png';
@@ -85067,231 +85248,231 @@ module.exports = __webpack_require__.p + "static/media/identity_guide.9d67337d.p
 function Likwid(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'wrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'innerlikwid'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'aboutlikwid'},'LIKWID is a fictional cold press bottled juice company. The creative process was divided into several steps, each requiring critical solutions. The color palette as well as the typefaces were chosen based on the overall brand strategy. Each creative decision was made in hopes of company growth and recognition'),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'likwidcontent'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'herolikwid',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_12__images_LIKWID_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'lander',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_2__images_likwid_likwid_lander_gif___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'landerads',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_3__images_likwid_likwid_lander_4_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'lander',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_9__images_likwid_businesscards_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'landerads',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_5__images_likwid_likwid_lander_3_jpg___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'lander',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_7__images_likwid_likwid_lander_6_gif___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'landerads',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_4__images_likwid_likwid_lander_2_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'lander',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_6__images_likwid_likwid_lander_5_gif___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'likwidimages',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_8__images_likwid_package_2_png___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'lander',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_10__images_likwid_likwid_color_jpg___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'likwidimages',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_11__images_likwid_tape_packaging_jpg___default.a+')'}}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'lander',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_13__images_likwid_likwid_png___default.a+')'}}))));}
 
 /***/ }),
-/* 168 */
+/* 171 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 169 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/media/likwid_lander.4728e613.gif";
-
-/***/ }),
-/* 170 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/media/likwid_lander_4.544658aa.png";
-
-/***/ }),
-/* 171 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/media/likwid_lander_2.09d09083.png";
 
 /***/ }),
 /* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/likwid_lander_3.8ae58420.jpg";
+module.exports = __webpack_require__.p + "static/media/likwid_lander.4728e613.gif";
 
 /***/ }),
 /* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/likwid_lander_5.fb088165.gif";
+module.exports = __webpack_require__.p + "static/media/likwid_lander_4.544658aa.png";
 
 /***/ }),
 /* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/likwid_lander_6.68d99647.gif";
+module.exports = __webpack_require__.p + "static/media/likwid_lander_2.09d09083.png";
 
 /***/ }),
 /* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/package_2.6593f933.png";
+module.exports = __webpack_require__.p + "static/media/likwid_lander_3.8ae58420.jpg";
 
 /***/ }),
 /* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/businesscards.a058b552.png";
+module.exports = __webpack_require__.p + "static/media/likwid_lander_5.fb088165.gif";
 
 /***/ }),
 /* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/likwid_color.68d445e0.jpg";
+module.exports = __webpack_require__.p + "static/media/likwid_lander_6.68d99647.gif";
 
 /***/ }),
 /* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/tape_packaging.7582d597.jpg";
+module.exports = __webpack_require__.p + "static/media/package_2.6593f933.png";
 
 /***/ }),
 /* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/likwid.cba1c088.png";
+module.exports = __webpack_require__.p + "static/media/businesscards.a058b552.png";
 
 /***/ }),
 /* 180 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Spectrum_css__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Spectrum_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_Spectrum_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_spectrum_previews_vol64no43_png__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_spectrum_previews_vol64no43_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_spectrum_previews_vol64no43_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_spectrum_previews_vol64no52_png__ = __webpack_require__(183);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_spectrum_previews_vol64no52_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_spectrum_previews_vol64no52_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_spectrum_previews_vol64no67_png__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_spectrum_previews_vol64no67_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_spectrum_previews_vol64no67_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_spectrum_previews_vol64no78_png__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_spectrum_previews_vol64no78_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_spectrum_previews_vol64no78_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_spectrum_previews_vol65no3_png__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_spectrum_previews_vol65no3_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_spectrum_previews_vol65no3_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_spectrum_previews_vol65no6_png__ = __webpack_require__(187);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_spectrum_previews_vol65no6_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_spectrum_previews_vol65no6_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_spectrum_previews_vol65no7_png__ = __webpack_require__(188);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_spectrum_previews_vol65no7_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_spectrum_previews_vol65no7_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_spectrum_previews_vol65no14_png__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_spectrum_previews_vol65no14_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__images_spectrum_previews_vol65no14_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_spectrum_previews_vol65no15_png__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_spectrum_previews_vol65no15_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__images_spectrum_previews_vol65no15_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_spectrum_previews_vol65no16_png__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_spectrum_previews_vol65no16_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__images_spectrum_previews_vol65no16_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_spectrum_previews_vol65no22_png__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_spectrum_previews_vol65no22_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__images_spectrum_previews_vol65no22_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_spectrum_previews_vol65no29_png__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_spectrum_previews_vol65no29_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__images_spectrum_previews_vol65no29_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__images_spectrum_previews_vol65no32_png__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__images_spectrum_previews_vol65no32_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__images_spectrum_previews_vol65no32_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__images_spectrum_previews_vol65no34_png__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__images_spectrum_previews_vol65no34_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__images_spectrum_previews_vol65no34_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__images_spectrum_previews_vol65no36_png__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__images_spectrum_previews_vol65no36_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__images_spectrum_previews_vol65no36_png__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__images_spectrum_previews_vol65no45_png__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__images_spectrum_previews_vol65no45_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__images_spectrum_previews_vol65no45_png__);
-var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Spectrum=function(_Component){_inherits(Spectrum,_Component);function Spectrum(props){_classCallCheck(this,Spectrum);var _this=_possibleConstructorReturn(this,(Spectrum.__proto__||Object.getPrototypeOf(Spectrum)).call(this,props));_this.state={};return _this;}_createClass(Spectrum,[{key:'render',value:function render(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'wrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'innerspectrum'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'aboutspectrum'},'The Spectrum is an independent student publication at the University at Buffalo campus.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'It began it\'s publication in 1950, it\'s student run till this day with a full staff of incredible and enthusiastic writers, editors, photographers, advertisers, along with a amazing creative desk that was my second home. As part of the creative desk we worked closely with writers and photographers to coordinate three issues a week during the annual school year.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Full version PDFs are posted on issuu consistently they can be viewed here (Some pages include ads, these are NOT created by me)',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'These issues feature cover designs, profiles, infographs, with designs made by, or co-created by me.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'http://www.ubspectrum.com/'},'The Spectrum')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'spectrumcontent'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_2__images_spectrum_previews_vol64no43_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 64 No 43')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_3__images_spectrum_previews_vol64no52_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 64 No 52')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_4__images_spectrum_previews_vol64no67_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 64 No 67')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_5__images_spectrum_previews_vol64no78_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 64 No 78')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_6__images_spectrum_previews_vol65no3_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 3')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_7__images_spectrum_previews_vol65no6_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 6')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_8__images_spectrum_previews_vol65no7_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 43')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_9__images_spectrum_previews_vol65no14_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 14')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_10__images_spectrum_previews_vol65no15_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 15')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_11__images_spectrum_previews_vol65no16_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 16')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_12__images_spectrum_previews_vol65no22_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 22')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_13__images_spectrum_previews_vol65no29_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 29')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_14__images_spectrum_previews_vol65no32_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 32')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_15__images_spectrum_previews_vol65no34_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 34')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_16__images_spectrum_previews_vol65no36_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 36')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_17__images_spectrum_previews_vol65no45_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 45')))));}}]);return Spectrum;}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);/* harmony default export */ __webpack_exports__["a"] = (Spectrum);
+module.exports = __webpack_require__.p + "static/media/likwid_color.68d445e0.jpg";
 
 /***/ }),
 /* 181 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+module.exports = __webpack_require__.p + "static/media/tape_packaging.7582d597.jpg";
 
 /***/ }),
 /* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol64no43.799c6cd5.png";
+module.exports = __webpack_require__.p + "static/media/likwid.cba1c088.png";
 
 /***/ }),
 /* 183 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol64no52.14afabf7.png";
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Spectrum_css__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_Spectrum_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_Spectrum_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_spectrum_previews_vol64no43_png__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_spectrum_previews_vol64no43_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_spectrum_previews_vol64no43_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_spectrum_previews_vol64no52_png__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__images_spectrum_previews_vol64no52_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__images_spectrum_previews_vol64no52_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_spectrum_previews_vol64no67_png__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__images_spectrum_previews_vol64no67_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__images_spectrum_previews_vol64no67_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_spectrum_previews_vol64no78_png__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__images_spectrum_previews_vol64no78_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__images_spectrum_previews_vol64no78_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_spectrum_previews_vol65no3_png__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__images_spectrum_previews_vol65no3_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__images_spectrum_previews_vol65no3_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_spectrum_previews_vol65no6_png__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__images_spectrum_previews_vol65no6_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__images_spectrum_previews_vol65no6_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_spectrum_previews_vol65no7_png__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__images_spectrum_previews_vol65no7_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__images_spectrum_previews_vol65no7_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_spectrum_previews_vol65no14_png__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__images_spectrum_previews_vol65no14_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__images_spectrum_previews_vol65no14_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_spectrum_previews_vol65no15_png__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__images_spectrum_previews_vol65no15_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__images_spectrum_previews_vol65no15_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_spectrum_previews_vol65no16_png__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__images_spectrum_previews_vol65no16_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__images_spectrum_previews_vol65no16_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_spectrum_previews_vol65no22_png__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__images_spectrum_previews_vol65no22_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__images_spectrum_previews_vol65no22_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_spectrum_previews_vol65no29_png__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__images_spectrum_previews_vol65no29_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__images_spectrum_previews_vol65no29_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__images_spectrum_previews_vol65no32_png__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__images_spectrum_previews_vol65no32_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14__images_spectrum_previews_vol65no32_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__images_spectrum_previews_vol65no34_png__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__images_spectrum_previews_vol65no34_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15__images_spectrum_previews_vol65no34_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__images_spectrum_previews_vol65no36_png__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__images_spectrum_previews_vol65no36_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16__images_spectrum_previews_vol65no36_png__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__images_spectrum_previews_vol65no45_png__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__images_spectrum_previews_vol65no45_png___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17__images_spectrum_previews_vol65no45_png__);
+var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var Spectrum=function(_Component){_inherits(Spectrum,_Component);function Spectrum(props){_classCallCheck(this,Spectrum);var _this=_possibleConstructorReturn(this,(Spectrum.__proto__||Object.getPrototypeOf(Spectrum)).call(this,props));_this.state={};return _this;}_createClass(Spectrum,[{key:'render',value:function render(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'wrapper'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'innerspectrum'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'aboutspectrum'},'The Spectrum is an independent student publication at the University at Buffalo campus.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'It began it\'s publication in 1950, it\'s student run till this day with a full staff of incredible and enthusiastic writers, editors, photographers, advertisers, along with a amazing creative desk that was my second home. As part of the creative desk we worked closely with writers and photographers to coordinate three issues a week during the annual school year.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'Full version PDFs are posted on issuu consistently they can be viewed here (Some pages include ads, these are NOT created by me)',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),'These issues feature cover designs, profiles, infographs, with designs made by, or co-created by me.',__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br',null),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('a',{href:'http://www.ubspectrum.com/'},'The Spectrum')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'spectrumcontent'},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_2__images_spectrum_previews_vol64no43_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 64 No 43')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_3__images_spectrum_previews_vol64no52_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 64 No 52')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_4__images_spectrum_previews_vol64no67_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 64 No 67')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_5__images_spectrum_previews_vol64no78_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 64 No 78')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_6__images_spectrum_previews_vol65no3_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 3')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_7__images_spectrum_previews_vol65no6_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 6')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_8__images_spectrum_previews_vol65no7_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 43')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_9__images_spectrum_previews_vol65no14_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 14')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_10__images_spectrum_previews_vol65no15_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 15')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_11__images_spectrum_previews_vol65no16_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 16')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_12__images_spectrum_previews_vol65no22_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 22')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_13__images_spectrum_previews_vol65no29_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 29')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_14__images_spectrum_previews_vol65no32_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 32')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_15__images_spectrum_previews_vol65no34_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 34')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_16__images_spectrum_previews_vol65no36_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 36')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'paper',style:{backgroundImage:'url('+__WEBPACK_IMPORTED_MODULE_17__images_spectrum_previews_vol65no45_png___default.a+')'}},__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('p',null,'VOL 65 No 45')))));}}]);return Spectrum;}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);/* harmony default export */ __webpack_exports__["a"] = (Spectrum);
 
 /***/ }),
 /* 184 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "static/media/vol64no67.d31f64af.png";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol64no78.943d1ac5.png";
+module.exports = __webpack_require__.p + "static/media/vol64no43.799c6cd5.png";
 
 /***/ }),
 /* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no3.cd3c5449.png";
+module.exports = __webpack_require__.p + "static/media/vol64no52.14afabf7.png";
 
 /***/ }),
 /* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no6.1110b831.png";
+module.exports = __webpack_require__.p + "static/media/vol64no67.d31f64af.png";
 
 /***/ }),
 /* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no7.e656161b.png";
+module.exports = __webpack_require__.p + "static/media/vol64no78.943d1ac5.png";
 
 /***/ }),
 /* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no14.234e8ddb.png";
+module.exports = __webpack_require__.p + "static/media/vol65no3.cd3c5449.png";
 
 /***/ }),
 /* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no15.49e1aa7b.png";
+module.exports = __webpack_require__.p + "static/media/vol65no6.1110b831.png";
 
 /***/ }),
 /* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no16.a29568e2.png";
+module.exports = __webpack_require__.p + "static/media/vol65no7.e656161b.png";
 
 /***/ }),
 /* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no22.85840350.png";
+module.exports = __webpack_require__.p + "static/media/vol65no14.234e8ddb.png";
 
 /***/ }),
 /* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no29.1a636e8d.png";
+module.exports = __webpack_require__.p + "static/media/vol65no15.49e1aa7b.png";
 
 /***/ }),
 /* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no32.2648a225.png";
+module.exports = __webpack_require__.p + "static/media/vol65no16.a29568e2.png";
 
 /***/ }),
 /* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no34.8fa1fdf8.png";
+module.exports = __webpack_require__.p + "static/media/vol65no22.85840350.png";
 
 /***/ }),
 /* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no36.45aa1bb7.png";
+module.exports = __webpack_require__.p + "static/media/vol65no29.1a636e8d.png";
 
 /***/ }),
 /* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/media/vol65no45.92adb58d.png";
+module.exports = __webpack_require__.p + "static/media/vol65no32.2648a225.png";
 
 /***/ }),
 /* 198 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/vol65no34.8fa1fdf8.png";
+
+/***/ }),
+/* 199 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/vol65no36.45aa1bb7.png";
+
+/***/ }),
+/* 200 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/vol65no45.92adb58d.png";
+
+/***/ }),
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(e,t){ true?module.exports=t():"function"==typeof define&&define.amd?define(t):e.Dropbox=t()}(this,function(){"use strict";function e(){return"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope||"undefined"==typeof module||"undefined"!=typeof window}function t(e){return"https://"+e+".dropboxapi.com/2/"}function r(e){return JSON.stringify(e).replace(/[\u007f-\uffff]/g,function(e){return"\\u"+("000"+e.charCodeAt(0).toString(16)).slice(-4)})}function n(e){var t=e.length;if(t%4>0)throw Error("Invalid string. Length must be a multiple of 4");return"="===e[t-2]?2:"="===e[t-1]?1:0}var i={};i.authTokenFromOauth1=function(e){return this.request("auth/token/from_oauth1",e,"app","api","rpc")},i.authTokenRevoke=function(e){return this.request("auth/token/revoke",e,"user","api","rpc")},i.filePropertiesPropertiesAdd=function(e){return this.request("file_properties/properties/add",e,"user","api","rpc")},i.filePropertiesPropertiesOverwrite=function(e){return this.request("file_properties/properties/overwrite",e,"user","api","rpc")},i.filePropertiesPropertiesRemove=function(e){return this.request("file_properties/properties/remove",e,"user","api","rpc")},i.filePropertiesPropertiesSearch=function(e){return this.request("file_properties/properties/search",e,"user","api","rpc")},i.filePropertiesPropertiesSearchContinue=function(e){return this.request("file_properties/properties/search/continue",e,"user","api","rpc")},i.filePropertiesPropertiesUpdate=function(e){return this.request("file_properties/properties/update",e,"user","api","rpc")},i.filePropertiesTemplatesAddForTeam=function(e){return this.request("file_properties/templates/add_for_team",e,"team","api","rpc")},i.filePropertiesTemplatesAddForUser=function(e){return this.request("file_properties/templates/add_for_user",e,"user","api","rpc")},i.filePropertiesTemplatesGetForTeam=function(e){return this.request("file_properties/templates/get_for_team",e,"team","api","rpc")},i.filePropertiesTemplatesGetForUser=function(e){return this.request("file_properties/templates/get_for_user",e,"user","api","rpc")},i.filePropertiesTemplatesListForTeam=function(e){return this.request("file_properties/templates/list_for_team",e,"team","api","rpc")},i.filePropertiesTemplatesListForUser=function(e){return this.request("file_properties/templates/list_for_user",e,"user","api","rpc")},i.filePropertiesTemplatesRemoveForTeam=function(e){return this.request("file_properties/templates/remove_for_team",e,"team","api","rpc")},i.filePropertiesTemplatesRemoveForUser=function(e){return this.request("file_properties/templates/remove_for_user",e,"user","api","rpc")},i.filePropertiesTemplatesUpdateForTeam=function(e){return this.request("file_properties/templates/update_for_team",e,"team","api","rpc")},i.filePropertiesTemplatesUpdateForUser=function(e){return this.request("file_properties/templates/update_for_user",e,"user","api","rpc")},i.fileRequestsCreate=function(e){return this.request("file_requests/create",e,"user","api","rpc")},i.fileRequestsGet=function(e){return this.request("file_requests/get",e,"user","api","rpc")},i.fileRequestsList=function(e){return this.request("file_requests/list",e,"user","api","rpc")},i.fileRequestsUpdate=function(e){return this.request("file_requests/update",e,"user","api","rpc")},i.filesAlphaGetMetadata=function(e){return this.request("files/alpha/get_metadata",e,"user","api","rpc")},i.filesAlphaUpload=function(e){return this.request("files/alpha/upload",e,"user","content","upload")},i.filesCopy=function(e){return this.request("files/copy",e,"user","api","rpc")},i.filesCopyBatch=function(e){return this.request("files/copy_batch",e,"user","api","rpc")},i.filesCopyBatchCheck=function(e){return this.request("files/copy_batch/check",e,"user","api","rpc")},i.filesCopyReferenceGet=function(e){return this.request("files/copy_reference/get",e,"user","api","rpc")},i.filesCopyReferenceSave=function(e){return this.request("files/copy_reference/save",e,"user","api","rpc")},i.filesCopyV2=function(e){return this.request("files/copy_v2",e,"user","api","rpc")},i.filesCreateFolder=function(e){return this.request("files/create_folder",e,"user","api","rpc")},i.filesCreateFolderBatch=function(e){return this.request("files/create_folder_batch",e,"user","api","rpc")},i.filesCreateFolderBatchCheck=function(e){return this.request("files/create_folder_batch/check",e,"user","api","rpc")},i.filesCreateFolderV2=function(e){return this.request("files/create_folder_v2",e,"user","api","rpc")},i.filesDelete=function(e){return this.request("files/delete",e,"user","api","rpc")},i.filesDeleteBatch=function(e){return this.request("files/delete_batch",e,"user","api","rpc")},i.filesDeleteBatchCheck=function(e){return this.request("files/delete_batch/check",e,"user","api","rpc")},i.filesDeleteV2=function(e){return this.request("files/delete_v2",e,"user","api","rpc")},i.filesDownload=function(e){return this.request("files/download",e,"user","content","download")},i.filesDownloadZip=function(e){return this.request("files/download_zip",e,"user","content","download")},i.filesGetMetadata=function(e){return this.request("files/get_metadata",e,"user","api","rpc")},i.filesGetPreview=function(e){return this.request("files/get_preview",e,"user","content","download")},i.filesGetTemporaryLink=function(e){return this.request("files/get_temporary_link",e,"user","api","rpc")},i.filesGetThumbnail=function(e){return this.request("files/get_thumbnail",e,"user","content","download")},i.filesGetThumbnailBatch=function(e){return this.request("files/get_thumbnail_batch",e,"user","content","rpc")},i.filesListFolder=function(e){return this.request("files/list_folder",e,"user","api","rpc")},i.filesListFolderContinue=function(e){return this.request("files/list_folder/continue",e,"user","api","rpc")},i.filesListFolderGetLatestCursor=function(e){return this.request("files/list_folder/get_latest_cursor",e,"user","api","rpc")},i.filesListFolderLongpoll=function(e){return this.request("files/list_folder/longpoll",e,"noauth","notify","rpc")},i.filesListRevisions=function(e){return this.request("files/list_revisions",e,"user","api","rpc")},i.filesMove=function(e){return this.request("files/move",e,"user","api","rpc")},i.filesMoveBatch=function(e){return this.request("files/move_batch",e,"user","api","rpc")},i.filesMoveBatchCheck=function(e){return this.request("files/move_batch/check",e,"user","api","rpc")},i.filesMoveV2=function(e){return this.request("files/move_v2",e,"user","api","rpc")},i.filesPermanentlyDelete=function(e){return this.request("files/permanently_delete",e,"user","api","rpc")},i.filesPropertiesAdd=function(e){return this.request("files/properties/add",e,"user","api","rpc")},i.filesPropertiesOverwrite=function(e){return this.request("files/properties/overwrite",e,"user","api","rpc")},i.filesPropertiesRemove=function(e){return this.request("files/properties/remove",e,"user","api","rpc")},i.filesPropertiesTemplateGet=function(e){return this.request("files/properties/template/get",e,"user","api","rpc")},i.filesPropertiesTemplateList=function(e){return this.request("files/properties/template/list",e,"user","api","rpc")},i.filesPropertiesUpdate=function(e){return this.request("files/properties/update",e,"user","api","rpc")},i.filesRestore=function(e){return this.request("files/restore",e,"user","api","rpc")},i.filesSaveUrl=function(e){return this.request("files/save_url",e,"user","api","rpc")},i.filesSaveUrlCheckJobStatus=function(e){return this.request("files/save_url/check_job_status",e,"user","api","rpc")},i.filesSearch=function(e){return this.request("files/search",e,"user","api","rpc")},i.filesUpload=function(e){return this.request("files/upload",e,"user","content","upload")},i.filesUploadSessionAppend=function(e){return this.request("files/upload_session/append",e,"user","content","upload")},i.filesUploadSessionAppendV2=function(e){return this.request("files/upload_session/append_v2",e,"user","content","upload")},i.filesUploadSessionFinish=function(e){return this.request("files/upload_session/finish",e,"user","content","upload")},i.filesUploadSessionFinishBatch=function(e){return this.request("files/upload_session/finish_batch",e,"user","api","rpc")},i.filesUploadSessionFinishBatchCheck=function(e){return this.request("files/upload_session/finish_batch/check",e,"user","api","rpc")},i.filesUploadSessionStart=function(e){return this.request("files/upload_session/start",e,"user","content","upload")},i.paperDocsArchive=function(e){return this.request("paper/docs/archive",e,"user","api","rpc")},i.paperDocsCreate=function(e){return this.request("paper/docs/create",e,"user","api","upload")},i.paperDocsDownload=function(e){return this.request("paper/docs/download",e,"user","api","download")},i.paperDocsFolderUsersList=function(e){return this.request("paper/docs/folder_users/list",e,"user","api","rpc")},i.paperDocsFolderUsersListContinue=function(e){return this.request("paper/docs/folder_users/list/continue",e,"user","api","rpc")},i.paperDocsGetFolderInfo=function(e){return this.request("paper/docs/get_folder_info",e,"user","api","rpc")},i.paperDocsList=function(e){return this.request("paper/docs/list",e,"user","api","rpc")},i.paperDocsListContinue=function(e){return this.request("paper/docs/list/continue",e,"user","api","rpc")},i.paperDocsPermanentlyDelete=function(e){return this.request("paper/docs/permanently_delete",e,"user","api","rpc")},i.paperDocsSharingPolicyGet=function(e){return this.request("paper/docs/sharing_policy/get",e,"user","api","rpc")},i.paperDocsSharingPolicySet=function(e){return this.request("paper/docs/sharing_policy/set",e,"user","api","rpc")},i.paperDocsUpdate=function(e){return this.request("paper/docs/update",e,"user","api","upload")},i.paperDocsUsersAdd=function(e){return this.request("paper/docs/users/add",e,"user","api","rpc")},i.paperDocsUsersList=function(e){return this.request("paper/docs/users/list",e,"user","api","rpc")},i.paperDocsUsersListContinue=function(e){return this.request("paper/docs/users/list/continue",e,"user","api","rpc")},i.paperDocsUsersRemove=function(e){return this.request("paper/docs/users/remove",e,"user","api","rpc")},i.sharingAddFileMember=function(e){return this.request("sharing/add_file_member",e,"user","api","rpc")},i.sharingAddFolderMember=function(e){return this.request("sharing/add_folder_member",e,"user","api","rpc")},i.sharingChangeFileMemberAccess=function(e){return this.request("sharing/change_file_member_access",e,"user","api","rpc")},i.sharingCheckJobStatus=function(e){return this.request("sharing/check_job_status",e,"user","api","rpc")},i.sharingCheckRemoveMemberJobStatus=function(e){return this.request("sharing/check_remove_member_job_status",e,"user","api","rpc")},i.sharingCheckShareJobStatus=function(e){return this.request("sharing/check_share_job_status",e,"user","api","rpc")},i.sharingCreateSharedLink=function(e){return this.request("sharing/create_shared_link",e,"user","api","rpc")},i.sharingCreateSharedLinkWithSettings=function(e){return this.request("sharing/create_shared_link_with_settings",e,"user","api","rpc")},i.sharingGetFileMetadata=function(e){return this.request("sharing/get_file_metadata",e,"user","api","rpc")},i.sharingGetFileMetadataBatch=function(e){return this.request("sharing/get_file_metadata/batch",e,"user","api","rpc")},i.sharingGetFolderMetadata=function(e){return this.request("sharing/get_folder_metadata",e,"user","api","rpc")},i.sharingGetSharedLinkFile=function(e){return this.request("sharing/get_shared_link_file",e,"user","content","download")},i.sharingGetSharedLinkMetadata=function(e){return this.request("sharing/get_shared_link_metadata",e,"user","api","rpc")},i.sharingGetSharedLinks=function(e){return this.request("sharing/get_shared_links",e,"user","api","rpc")},i.sharingListFileMembers=function(e){return this.request("sharing/list_file_members",e,"user","api","rpc")},i.sharingListFileMembersBatch=function(e){return this.request("sharing/list_file_members/batch",e,"user","api","rpc")},i.sharingListFileMembersContinue=function(e){return this.request("sharing/list_file_members/continue",e,"user","api","rpc")},i.sharingListFolderMembers=function(e){return this.request("sharing/list_folder_members",e,"user","api","rpc")},i.sharingListFolderMembersContinue=function(e){return this.request("sharing/list_folder_members/continue",e,"user","api","rpc")},i.sharingListFolders=function(e){return this.request("sharing/list_folders",e,"user","api","rpc")},i.sharingListFoldersContinue=function(e){return this.request("sharing/list_folders/continue",e,"user","api","rpc")},i.sharingListMountableFolders=function(e){return this.request("sharing/list_mountable_folders",e,"user","api","rpc")},i.sharingListMountableFoldersContinue=function(e){return this.request("sharing/list_mountable_folders/continue",e,"user","api","rpc")},i.sharingListReceivedFiles=function(e){return this.request("sharing/list_received_files",e,"user","api","rpc")},i.sharingListReceivedFilesContinue=function(e){return this.request("sharing/list_received_files/continue",e,"user","api","rpc")},i.sharingListSharedLinks=function(e){return this.request("sharing/list_shared_links",e,"user","api","rpc")},i.sharingModifySharedLinkSettings=function(e){return this.request("sharing/modify_shared_link_settings",e,"user","api","rpc")},i.sharingMountFolder=function(e){return this.request("sharing/mount_folder",e,"user","api","rpc")},i.sharingRelinquishFileMembership=function(e){return this.request("sharing/relinquish_file_membership",e,"user","api","rpc")},i.sharingRelinquishFolderMembership=function(e){return this.request("sharing/relinquish_folder_membership",e,"user","api","rpc")},i.sharingRemoveFileMember=function(e){return this.request("sharing/remove_file_member",e,"user","api","rpc")},i.sharingRemoveFileMember2=function(e){return this.request("sharing/remove_file_member_2",e,"user","api","rpc")},i.sharingRemoveFolderMember=function(e){return this.request("sharing/remove_folder_member",e,"user","api","rpc")},i.sharingRevokeSharedLink=function(e){return this.request("sharing/revoke_shared_link",e,"user","api","rpc")},i.sharingSetAccessInheritance=function(e){return this.request("sharing/set_access_inheritance",e,"user","api","rpc")},i.sharingShareFolder=function(e){return this.request("sharing/share_folder",e,"user","api","rpc")},i.sharingTransferFolder=function(e){return this.request("sharing/transfer_folder",e,"user","api","rpc")},i.sharingUnmountFolder=function(e){return this.request("sharing/unmount_folder",e,"user","api","rpc")},i.sharingUnshareFile=function(e){return this.request("sharing/unshare_file",e,"user","api","rpc")},i.sharingUnshareFolder=function(e){return this.request("sharing/unshare_folder",e,"user","api","rpc")},i.sharingUpdateFileMember=function(e){return this.request("sharing/update_file_member",e,"user","api","rpc")},i.sharingUpdateFolderMember=function(e){return this.request("sharing/update_folder_member",e,"user","api","rpc")},i.sharingUpdateFolderPolicy=function(e){return this.request("sharing/update_folder_policy",e,"user","api","rpc")},i.teamLogGetEvents=function(e){return this.request("team_log/get_events",e,"team","api","rpc")},i.teamLogGetEventsContinue=function(e){return this.request("team_log/get_events/continue",e,"team","api","rpc")},i.usersGetAccount=function(e){return this.request("users/get_account",e,"user","api","rpc")},i.usersGetAccountBatch=function(e){return this.request("users/get_account_batch",e,"user","api","rpc")},i.usersGetCurrentAccount=function(e){return this.request("users/get_current_account",e,"user","api","rpc")},i.usersGetSpaceUsage=function(e){return this.request("users/get_space_usage",e,"user","api","rpc")};for(var s=function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")},o=function(){function e(e,t){for(var r=0;t.length>r;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),u=function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)},a=function(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t},c=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var r=[],n=!0,i=!1,s=void 0;try{for(var o,u=e[Symbol.iterator]();!(n=(o=u.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){i=!0,s=e}finally{try{!n&&u.return&&u.return()}finally{if(i)throw s}}return r}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),p=function(e){return 3*e.length/4-n(e)},f=function(e){var t,r,i,s,o,u=e.length;s=n(e),o=new d(3*u/4-s),r=s>0?u-4:u;var a=0;for(t=0;r>t;t+=4)i=m[e.charCodeAt(t)]<<18|m[e.charCodeAt(t+1)]<<12|m[e.charCodeAt(t+2)]<<6|m[e.charCodeAt(t+3)],o[a++]=i>>16&255,o[a++]=i>>8&255,o[a++]=255&i;return 2===s?(i=m[e.charCodeAt(t)]<<2|m[e.charCodeAt(t+1)]>>4,o[a++]=255&i):1===s&&(i=m[e.charCodeAt(t)]<<10|m[e.charCodeAt(t+1)]<<4|m[e.charCodeAt(t+2)]>>2,o[a++]=i>>8&255,o[a++]=255&i),o},h=function(e){for(var t,r=e.length,n=r%3,i="",s=[],o=0,u=r-n;u>o;o+=16383)s.push(function(e,t,r){for(var n=[],i=t;r>i;i+=3)n.push(function(e){return l[e>>18&63]+l[e>>12&63]+l[e>>6&63]+l[63&e]}((e[i]<<16)+(e[i+1]<<8)+e[i+2]));return n.join("")}(e,o,o+16383>u?u:o+16383));return 1===n?(i+=l[(t=e[r-1])>>2],i+=l[t<<4&63],i+="=="):2===n&&(i+=l[(t=(e[r-2]<<8)+e[r-1])>>10],i+=l[t>>4&63],i+=l[t<<2&63],i+="="),s.push(i),s.join("")},l=[],m=[],d="undefined"!=typeof Uint8Array?Uint8Array:Array,g="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",_=0;64>_;++_)l[_]=g[_],m[g.charCodeAt(_)]=_;m[45]=62,m[95]=63;var v={byteLength:p,toByteArray:f,fromByteArray:h},b={read:function(e,t,r,n,i){var s,o,u=8*i-n-1,a=(1<<u)-1,c=a>>1,p=-7,f=r?i-1:0,h=r?-1:1,l=e[t+f];for(f+=h,s=l&(1<<-p)-1,l>>=-p,p+=u;p>0;s=256*s+e[t+f],f+=h,p-=8);for(o=s&(1<<-p)-1,s>>=-p,p+=n;p>0;o=256*o+e[t+f],f+=h,p-=8);if(0===s)s=1-c;else{if(s===a)return o?NaN:1/0*(l?-1:1);o+=Math.pow(2,n),s-=c}return(l?-1:1)*o*Math.pow(2,s-n)},write:function(e,t,r,n,i,s){var o,u,a,c=8*s-i-1,p=(1<<c)-1,f=p>>1,h=23===i?5.960464477539062e-8:0,l=n?0:s-1,m=n?1:-1,d=0>t||0===t&&0>1/t?1:0;for(t=Math.abs(t),isNaN(t)||t===1/0?(u=isNaN(t)?1:0,o=p):(o=Math.floor(Math.log(t)/Math.LN2),1>t*(a=Math.pow(2,-o))&&(o--,a*=2),2>(t+=1>o+f?h*Math.pow(2,1-f):h/a)*a||(o++,a/=2),p>o+f?1>o+f?(u=t*Math.pow(2,f-1)*Math.pow(2,i),o=0):(u=(t*a-1)*Math.pow(2,i),o+=f):(u=0,o=p));i>=8;e[r+l]=255&u,l+=m,u/=256,i-=8);for(o=o<<i|u,c+=i;c>0;e[r+l]=255&o,l+=m,o/=256,c-=8);e[r+l-m]|=128*d}},y=function(e,t){return t={exports:{}},e(t,t.exports),t.exports}(function(e,t){function r(e){if(e>U)throw new RangeError("Invalid typed array length");var t=new Uint8Array(e);return t.__proto__=n.prototype,t}function n(e,t,r){if("number"==typeof e){if("string"==typeof t)throw Error("If encoding is specified then the first argument must be a string");return o(e)}return i(e,t,r)}function i(e,t,i){if("number"==typeof e)throw new TypeError('"value" argument must not be a number');return S(e)?function(e,t,r){if(0>t||t>e.byteLength)throw new RangeError("'offset' is out of bounds");if(t+(r||0)>e.byteLength)throw new RangeError("'length' is out of bounds");var i;i=void 0===t&&void 0===r?new Uint8Array(e):void 0===r?new Uint8Array(e,t):new Uint8Array(e,t,r);return i.__proto__=n.prototype,i}(e,t,i):"string"==typeof e?function(e,t){"string"==typeof t&&""!==t||(t="utf8");if(!n.isEncoding(t))throw new TypeError('"encoding" must be a valid string encoding');var i=0|c(e,t),s=r(i),o=s.write(e,t);o!==i&&(s=s.slice(0,o));return s}(e,t):function(e){if(n.isBuffer(e)){var t=0|a(e.length),i=r(t);return 0===i.length?i:(e.copy(i,0,0,t),i)}if(e){if(L(e)||"length"in e)return"number"!=typeof e.length||E(e.length)?r(0):u(e);if("Buffer"===e.type&&Array.isArray(e.data))return u(e.data)}throw new TypeError("First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.")}(e)}function s(e){if("number"!=typeof e)throw new TypeError('"size" argument must be a number');if(0>e)throw new RangeError('"size" argument must not be negative')}function o(e){return s(e),r(0>e?0:0|a(e))}function u(e){for(var t=0>e.length?0:0|a(e.length),n=r(t),i=0;t>i;i+=1)n[i]=255&e[i];return n}function a(e){if(e>=U)throw new RangeError("Attempt to allocate Buffer larger than maximum size: 0x"+U.toString(16)+" bytes");return 0|e}function c(e,t){if(n.isBuffer(e))return e.length;if(L(e)||S(e))return e.byteLength;"string"!=typeof e&&(e=""+e);var r=e.length;if(0===r)return 0;for(var i=!1;;)switch(t){case"ascii":case"latin1":case"binary":return r;case"utf8":case"utf-8":case void 0:return w(e).length;case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return 2*r;case"hex":return r>>>1;case"base64":return k(e).length;default:if(i)return w(e).length;t=(""+t).toLowerCase(),i=!0}}function p(e,t,r){var n=e[t];e[t]=e[r],e[r]=n}function f(e,t,r,i,s){if(0===e.length)return-1;if("string"==typeof r?(i=r,r=0):r>2147483647?r=2147483647:-2147483648>r&&(r=-2147483648),r=+r,E(r)&&(r=s?0:e.length-1),0>r&&(r=e.length+r),e.length>r){if(0>r){if(!s)return-1;r=0}}else{if(s)return-1;r=e.length-1}if("string"==typeof t&&(t=n.from(t,i)),n.isBuffer(t))return 0===t.length?-1:h(e,t,r,i,s);if("number"==typeof t)return t&=255,"function"==typeof Uint8Array.prototype.indexOf?s?Uint8Array.prototype.indexOf.call(e,t,r):Uint8Array.prototype.lastIndexOf.call(e,t,r):h(e,[t],r,i,s);throw new TypeError("val must be string, number or Buffer")}function h(e,t,r,n,i){function s(e,t){return 1===o?e[t]:e.readUInt16BE(t*o)}var o=1,u=e.length,a=t.length;if(void 0!==n&&("ucs2"===(n=(n+"").toLowerCase())||"ucs-2"===n||"utf16le"===n||"utf-16le"===n)){if(2>e.length||2>t.length)return-1;o=2,u/=2,a/=2,r/=2}var c;if(i){var p=-1;for(c=r;u>c;c++)if(s(e,c)===s(t,-1===p?0:c-p)){if(-1===p&&(p=c),c-p+1===a)return p*o}else-1!==p&&(c-=c-p),p=-1}else for(r+a>u&&(r=u-a),c=r;c>=0;c--){for(var f=!0,h=0;a>h;h++)if(s(e,c+h)!==s(t,h)){f=!1;break}if(f)return c}return-1}function l(e,t,r,n){return A(function(e){for(var t=[],r=0;e.length>r;++r)t.push(255&e.charCodeAt(r));return t}(t),e,r,n)}function m(e,t,r){r=Math.min(e.length,r);for(var n=[],i=t;r>i;){var s=e[i],o=null,u=s>239?4:s>223?3:s>191?2:1;if(r>=i+u){var a,c,p,f;switch(u){case 1:128>s&&(o=s);break;case 2:128==(192&(a=e[i+1]))&&(f=(31&s)<<6|63&a)>127&&(o=f);break;case 3:c=e[i+2],128==(192&(a=e[i+1]))&&128==(192&c)&&(f=(15&s)<<12|(63&a)<<6|63&c)>2047&&(55296>f||f>57343)&&(o=f);break;case 4:c=e[i+2],p=e[i+3],128==(192&(a=e[i+1]))&&128==(192&c)&&128==(192&p)&&(f=(15&s)<<18|(63&a)<<12|(63&c)<<6|63&p)>65535&&1114112>f&&(o=f)}}null===o?(o=65533,u=1):o>65535&&(n.push((o-=65536)>>>10&1023|55296),o=56320|1023&o),n.push(o),i+=u}return function(e){var t=e.length;if(C>=t)return String.fromCharCode.apply(String,e);var r="",n=0;for(;t>n;)r+=String.fromCharCode.apply(String,e.slice(n,n+=C));return r}(n)}function d(e,t,r){if(e%1!=0||0>e)throw new RangeError("offset is not uint");if(e+t>r)throw new RangeError("Trying to access beyond buffer length")}function g(e,t,r,i,s,o){if(!n.isBuffer(e))throw new TypeError('"buffer" argument must be a Buffer instance');if(t>s||o>t)throw new RangeError('"value" argument is out of bounds');if(r+i>e.length)throw new RangeError("Index out of range")}function _(e,t,r,n,i,s){if(r+n>e.length)throw new RangeError("Index out of range");if(0>r)throw new RangeError("Index out of range")}function y(e,t,r,n,i){return t=+t,r>>>=0,i||_(e,0,r,4),b.write(e,t,r,n,23,4),r+4}function q(e,t,r,n,i){return t=+t,r>>>=0,i||_(e,0,r,8),b.write(e,t,r,n,52,8),r+8}function w(e,t){t=t||1/0;for(var r,n=e.length,i=null,s=[],o=0;n>o;++o){if((r=e.charCodeAt(o))>55295&&57344>r){if(!i){if(r>56319){(t-=3)>-1&&s.push(239,191,189);continue}if(o+1===n){(t-=3)>-1&&s.push(239,191,189);continue}i=r;continue}if(56320>r){(t-=3)>-1&&s.push(239,191,189),i=r;continue}r=65536+(i-55296<<10|r-56320)}else i&&(t-=3)>-1&&s.push(239,191,189);if(i=null,128>r){if(0>(t-=1))break;s.push(r)}else if(2048>r){if(0>(t-=2))break;s.push(r>>6|192,63&r|128)}else if(65536>r){if(0>(t-=3))break;s.push(r>>12|224,r>>6&63|128,63&r|128)}else{if(r>=1114112)throw Error("Invalid code point");if(0>(t-=4))break;s.push(r>>18|240,r>>12&63|128,r>>6&63|128,63&r|128)}}return s}function k(e){return v.toByteArray(function(e){if(2>(e=e.trim().replace(T,"")).length)return"";for(;e.length%4!=0;)e+="=";return e}(e))}function A(e,t,r,n){for(var i=0;n>i&&(i+r<t.length&&i<e.length);++i)t[i+r]=e[i];return i}function S(e){return e instanceof ArrayBuffer||null!=e&&null!=e.constructor&&"ArrayBuffer"===e.constructor.name&&"number"==typeof e.byteLength}function L(e){return"function"==typeof ArrayBuffer.isView&&ArrayBuffer.isView(e)}function E(e){return e!=e}t.Buffer=n,t.SlowBuffer=function(e){return+e!=e&&(e=0),n.alloc(+e)},t.INSPECT_MAX_BYTES=50;var U=2147483647;t.kMaxLength=U,(n.TYPED_ARRAY_SUPPORT=function(){try{var e=new Uint8Array(1);return e.__proto__={__proto__:Uint8Array.prototype,foo:function(){return 42}},42===e.foo()}catch(e){return!1}}())||void 0===console||"function"!=typeof console.error||console.error("This browser lacks typed array (Uint8Array) support which is required by `buffer` v5.x. Use `buffer` v4.x if you require old browser support."),"undefined"!=typeof Symbol&&Symbol.species&&n[Symbol.species]===n&&Object.defineProperty(n,Symbol.species,{value:null,configurable:!0,enumerable:!1,writable:!1}),n.poolSize=8192,n.from=function(e,t,r){return i(e,t,r)},n.prototype.__proto__=Uint8Array.prototype,n.__proto__=Uint8Array,n.alloc=function(e,t,n){return function(e,t,n){return s(e),e>0&&void 0!==t?"string"==typeof n?r(e).fill(t,n):r(e).fill(t):r(e)}(e,t,n)},n.allocUnsafe=function(e){return o(e)},n.allocUnsafeSlow=function(e){return o(e)},n.isBuffer=function(e){return null!=e&&!0===e._isBuffer},n.compare=function(e,t){if(!n.isBuffer(e)||!n.isBuffer(t))throw new TypeError("Arguments must be Buffers");if(e===t)return 0;for(var r=e.length,i=t.length,s=0,o=Math.min(r,i);o>s;++s)if(e[s]!==t[s]){r=e[s],i=t[s];break}return i>r?-1:r>i?1:0},n.isEncoding=function(e){switch((e+"").toLowerCase()){case"hex":case"utf8":case"utf-8":case"ascii":case"latin1":case"binary":case"base64":case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return!0;default:return!1}},n.concat=function(e,t){if(!Array.isArray(e))throw new TypeError('"list" argument must be an Array of Buffers');if(0===e.length)return n.alloc(0);var r;if(void 0===t)for(t=0,r=0;e.length>r;++r)t+=e[r].length;var i=n.allocUnsafe(t),s=0;for(r=0;e.length>r;++r){var o=e[r];if(!n.isBuffer(o))throw new TypeError('"list" argument must be an Array of Buffers');o.copy(i,s),s+=o.length}return i},n.byteLength=c,n.prototype._isBuffer=!0,n.prototype.swap16=function(){var e=this.length;if(e%2!=0)throw new RangeError("Buffer size must be a multiple of 16-bits");for(var t=0;e>t;t+=2)p(this,t,t+1);return this},n.prototype.swap32=function(){var e=this.length;if(e%4!=0)throw new RangeError("Buffer size must be a multiple of 32-bits");for(var t=0;e>t;t+=4)p(this,t,t+3),p(this,t+1,t+2);return this},n.prototype.swap64=function(){var e=this.length;if(e%8!=0)throw new RangeError("Buffer size must be a multiple of 64-bits");for(var t=0;e>t;t+=8)p(this,t,t+7),p(this,t+1,t+6),p(this,t+2,t+5),p(this,t+3,t+4);return this},n.prototype.toString=function(){var e=this.length;return 0===e?"":0===arguments.length?m(this,0,e):function(e,t,r){var n=!1;if((void 0===t||0>t)&&(t=0),t>this.length)return"";if((void 0===r||r>this.length)&&(r=this.length),0>=r)return"";if(r>>>=0,(t>>>=0)>=r)return"";for(e||(e="utf8");;)switch(e){case"hex":return function(e,t,r){var n=e.length;t&&t>=0||(t=0),(!r||0>r||r>n)&&(r=n);for(var i="",s=t;r>s;++s)i+=function(e){return 16>e?"0"+e.toString(16):e.toString(16)}(e[s]);return i}(this,t,r);case"utf8":case"utf-8":return m(this,t,r);case"ascii":return function(e,t,r){var n="";r=Math.min(e.length,r);for(var i=t;r>i;++i)n+=String.fromCharCode(127&e[i]);return n}(this,t,r);case"latin1":case"binary":return function(e,t,r){var n="";r=Math.min(e.length,r);for(var i=t;r>i;++i)n+=String.fromCharCode(e[i]);return n}(this,t,r);case"base64":return function(e,t,r){return v.fromByteArray(0===t&&r===e.length?e:e.slice(t,r))}(this,t,r);case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return function(e,t,r){for(var n=e.slice(t,r),i="",s=0;n.length>s;s+=2)i+=String.fromCharCode(n[s]+256*n[s+1]);return i}(this,t,r);default:if(n)throw new TypeError("Unknown encoding: "+e);e=(e+"").toLowerCase(),n=!0}}.apply(this,arguments)},n.prototype.equals=function(e){if(!n.isBuffer(e))throw new TypeError("Argument must be a Buffer");return this===e||0===n.compare(this,e)},n.prototype.inspect=function(){var e="",r=t.INSPECT_MAX_BYTES;return this.length>0&&(e=this.toString("hex",0,r).match(/.{2}/g).join(" "),this.length>r&&(e+=" ... ")),"<Buffer "+e+">"},n.prototype.compare=function(e,t,r,i,s){if(!n.isBuffer(e))throw new TypeError("Argument must be a Buffer");if(void 0===t&&(t=0),void 0===r&&(r=e?e.length:0),void 0===i&&(i=0),void 0===s&&(s=this.length),0>t||r>e.length||0>i||s>this.length)throw new RangeError("out of range index");if(i>=s&&t>=r)return 0;if(i>=s)return-1;if(t>=r)return 1;if(t>>>=0,r>>>=0,i>>>=0,s>>>=0,this===e)return 0;for(var o=s-i,u=r-t,a=Math.min(o,u),c=this.slice(i,s),p=e.slice(t,r),f=0;a>f;++f)if(c[f]!==p[f]){o=c[f],u=p[f];break}return u>o?-1:o>u?1:0},n.prototype.includes=function(e,t,r){return-1!==this.indexOf(e,t,r)},n.prototype.indexOf=function(e,t,r){return f(this,e,t,r,!0)},n.prototype.lastIndexOf=function(e,t,r){return f(this,e,t,r,!1)},n.prototype.write=function(e,t,r,n){if(void 0===t)n="utf8",r=this.length,t=0;else if(void 0===r&&"string"==typeof t)n=t,r=this.length,t=0;else{if(!isFinite(t))throw Error("Buffer.write(string, encoding, offset[, length]) is no longer supported");t>>>=0,isFinite(r)?(r>>>=0,void 0===n&&(n="utf8")):(n=r,r=void 0)}var i=this.length-t;if((void 0===r||r>i)&&(r=i),e.length>0&&(0>r||0>t)||t>this.length)throw new RangeError("Attempt to write outside buffer bounds");n||(n="utf8");for(var s=!1;;)switch(n){case"hex":return function(e,t,r,n){var i=e.length-(r=+r||0);n?(n=+n)>i&&(n=i):n=i;var s=t.length;if(s%2!=0)throw new TypeError("Invalid hex string");n>s/2&&(n=s/2);for(var o=0;n>o;++o){var u=parseInt(t.substr(2*o,2),16);if(E(u))return o;e[r+o]=u}return o}(this,e,t,r);case"utf8":case"utf-8":return function(e,t,r,n){return A(w(t,e.length-r),e,r,n)}(this,e,t,r);case"ascii":return l(this,e,t,r);case"latin1":case"binary":return function(e,t,r,n){return l(e,t,r,n)}(this,e,t,r);case"base64":return function(e,t,r,n){return A(k(t),e,r,n)}(this,e,t,r);case"ucs2":case"ucs-2":case"utf16le":case"utf-16le":return function(e,t,r,n){return A(function(e,t){for(var r,n,i=[],s=0;e.length>s&&(t-=2)>=0;++s)r=e.charCodeAt(s),n=r>>8,i.push(r%256),i.push(n);return i}(t,e.length-r),e,r,n)}(this,e,t,r);default:if(s)throw new TypeError("Unknown encoding: "+n);n=(""+n).toLowerCase(),s=!0}},n.prototype.toJSON=function(){return{type:"Buffer",data:Array.prototype.slice.call(this._arr||this,0)}};var C=4096;n.prototype.slice=function(e,t){var r=this.length;e=~~e,t=void 0===t?r:~~t,0>e?0>(e+=r)&&(e=0):e>r&&(e=r),0>t?0>(t+=r)&&(t=0):t>r&&(t=r),e>t&&(t=e);var i=this.subarray(e,t);return i.__proto__=n.prototype,i},n.prototype.readUIntLE=function(e,t,r){e>>>=0,t>>>=0,r||d(e,t,this.length);for(var n=this[e],i=1,s=0;++s<t&&(i*=256);)n+=this[e+s]*i;return n},n.prototype.readUIntBE=function(e,t,r){e>>>=0,t>>>=0,r||d(e,t,this.length);for(var n=this[e+--t],i=1;t>0&&(i*=256);)n+=this[e+--t]*i;return n},n.prototype.readUInt8=function(e,t){return e>>>=0,t||d(e,1,this.length),this[e]},n.prototype.readUInt16LE=function(e,t){return e>>>=0,t||d(e,2,this.length),this[e]|this[e+1]<<8},n.prototype.readUInt16BE=function(e,t){return e>>>=0,t||d(e,2,this.length),this[e]<<8|this[e+1]},n.prototype.readUInt32LE=function(e,t){return e>>>=0,t||d(e,4,this.length),(this[e]|this[e+1]<<8|this[e+2]<<16)+16777216*this[e+3]},n.prototype.readUInt32BE=function(e,t){return e>>>=0,t||d(e,4,this.length),16777216*this[e]+(this[e+1]<<16|this[e+2]<<8|this[e+3])},n.prototype.readIntLE=function(e,t,r){e>>>=0,t>>>=0,r||d(e,t,this.length);for(var n=this[e],i=1,s=0;++s<t&&(i*=256);)n+=this[e+s]*i;return(i*=128)>n||(n-=Math.pow(2,8*t)),n},n.prototype.readIntBE=function(e,t,r){e>>>=0,t>>>=0,r||d(e,t,this.length);for(var n=t,i=1,s=this[e+--n];n>0&&(i*=256);)s+=this[e+--n]*i;return(i*=128)>s||(s-=Math.pow(2,8*t)),s},n.prototype.readInt8=function(e,t){return e>>>=0,t||d(e,1,this.length),128&this[e]?-1*(255-this[e]+1):this[e]},n.prototype.readInt16LE=function(e,t){e>>>=0,t||d(e,2,this.length);var r=this[e]|this[e+1]<<8;return 32768&r?4294901760|r:r},n.prototype.readInt16BE=function(e,t){e>>>=0,t||d(e,2,this.length);var r=this[e+1]|this[e]<<8;return 32768&r?4294901760|r:r},n.prototype.readInt32LE=function(e,t){return e>>>=0,t||d(e,4,this.length),this[e]|this[e+1]<<8|this[e+2]<<16|this[e+3]<<24},n.prototype.readInt32BE=function(e,t){return e>>>=0,t||d(e,4,this.length),this[e]<<24|this[e+1]<<16|this[e+2]<<8|this[e+3]},n.prototype.readFloatLE=function(e,t){return e>>>=0,t||d(e,4,this.length),b.read(this,e,!0,23,4)},n.prototype.readFloatBE=function(e,t){return e>>>=0,t||d(e,4,this.length),b.read(this,e,!1,23,4)},n.prototype.readDoubleLE=function(e,t){return e>>>=0,t||d(e,8,this.length),b.read(this,e,!0,52,8)},n.prototype.readDoubleBE=function(e,t){return e>>>=0,t||d(e,8,this.length),b.read(this,e,!1,52,8)},n.prototype.writeUIntLE=function(e,t,r,n){if(e=+e,t>>>=0,r>>>=0,!n){g(this,e,t,r,Math.pow(2,8*r)-1,0)}var i=1,s=0;for(this[t]=255&e;++s<r&&(i*=256);)this[t+s]=e/i&255;return t+r},n.prototype.writeUIntBE=function(e,t,r,n){if(e=+e,t>>>=0,r>>>=0,!n){g(this,e,t,r,Math.pow(2,8*r)-1,0)}var i=r-1,s=1;for(this[t+i]=255&e;--i>=0&&(s*=256);)this[t+i]=e/s&255;return t+r},n.prototype.writeUInt8=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,1,255,0),this[t]=255&e,t+1},n.prototype.writeUInt16LE=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,2,65535,0),this[t]=255&e,this[t+1]=e>>>8,t+2},n.prototype.writeUInt16BE=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,2,65535,0),this[t]=e>>>8,this[t+1]=255&e,t+2},n.prototype.writeUInt32LE=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,4,4294967295,0),this[t+3]=e>>>24,this[t+2]=e>>>16,this[t+1]=e>>>8,this[t]=255&e,t+4},n.prototype.writeUInt32BE=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,4,4294967295,0),this[t]=e>>>24,this[t+1]=e>>>16,this[t+2]=e>>>8,this[t+3]=255&e,t+4},n.prototype.writeIntLE=function(e,t,r,n){if(e=+e,t>>>=0,!n){var i=Math.pow(2,8*r-1);g(this,e,t,r,i-1,-i)}var s=0,o=1,u=0;for(this[t]=255&e;++s<r&&(o*=256);)0>e&&0===u&&0!==this[t+s-1]&&(u=1),this[t+s]=(e/o>>0)-u&255;return t+r},n.prototype.writeIntBE=function(e,t,r,n){if(e=+e,t>>>=0,!n){var i=Math.pow(2,8*r-1);g(this,e,t,r,i-1,-i)}var s=r-1,o=1,u=0;for(this[t+s]=255&e;--s>=0&&(o*=256);)0>e&&0===u&&0!==this[t+s+1]&&(u=1),this[t+s]=(e/o>>0)-u&255;return t+r},n.prototype.writeInt8=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,1,127,-128),0>e&&(e=255+e+1),this[t]=255&e,t+1},n.prototype.writeInt16LE=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,2,32767,-32768),this[t]=255&e,this[t+1]=e>>>8,t+2},n.prototype.writeInt16BE=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,2,32767,-32768),this[t]=e>>>8,this[t+1]=255&e,t+2},n.prototype.writeInt32LE=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,4,2147483647,-2147483648),this[t]=255&e,this[t+1]=e>>>8,this[t+2]=e>>>16,this[t+3]=e>>>24,t+4},n.prototype.writeInt32BE=function(e,t,r){return e=+e,t>>>=0,r||g(this,e,t,4,2147483647,-2147483648),0>e&&(e=4294967295+e+1),this[t]=e>>>24,this[t+1]=e>>>16,this[t+2]=e>>>8,this[t+3]=255&e,t+4},n.prototype.writeFloatLE=function(e,t,r){return y(this,e,t,!0,r)},n.prototype.writeFloatBE=function(e,t,r){return y(this,e,t,!1,r)},n.prototype.writeDoubleLE=function(e,t,r){return q(this,e,t,!0,r)},n.prototype.writeDoubleBE=function(e,t,r){return q(this,e,t,!1,r)},n.prototype.copy=function(e,t,r,n){if(r||(r=0),n||0===n||(n=this.length),e.length>t||(t=e.length),t||(t=0),n>0&&r>n&&(n=r),n===r)return 0;if(0===e.length||0===this.length)return 0;if(0>t)throw new RangeError("targetStart out of bounds");if(0>r||r>=this.length)throw new RangeError("sourceStart out of bounds");if(0>n)throw new RangeError("sourceEnd out of bounds");n>this.length&&(n=this.length),n-r>e.length-t&&(n=e.length-t+r);var i,s=n-r;if(this===e&&t>r&&n>t)for(i=s-1;i>=0;--i)e[i+t]=this[i+r];else if(1e3>s)for(i=0;s>i;++i)e[i+t]=this[i+r];else Uint8Array.prototype.set.call(e,this.subarray(r,r+s),t);return s},n.prototype.fill=function(e,t,r,i){if("string"==typeof e){if("string"==typeof t?(i=t,t=0,r=this.length):"string"==typeof r&&(i=r,r=this.length),1===e.length){var s=e.charCodeAt(0);256>s&&(e=s)}if(void 0!==i&&"string"!=typeof i)throw new TypeError("encoding must be a string");if("string"==typeof i&&!n.isEncoding(i))throw new TypeError("Unknown encoding: "+i)}else"number"==typeof e&&(e&=255);if(0>t||t>this.length||r>this.length)throw new RangeError("Out of range index");if(t>=r)return this;t>>>=0,r=void 0===r?this.length:r>>>0,e||(e=0);var o;if("number"==typeof e)for(o=t;r>o;++o)this[o]=e;else{var u=n.isBuffer(e)?e:new n(e,i),a=u.length;for(o=0;r-t>o;++o)this[o+t]=u[o%a]}return this};var T=/[^+/0-9A-Za-z-_]/g}).Buffer;"function"!=typeof Object.assign&&(Object.assign=function(e){var t,r,n,i;if(void 0===e||null===e)throw new TypeError("Cannot convert undefined or null to object");for(t=Object(e),r=1;arguments.length>r;r++)if(void 0!==(n=arguments[r])&&null!==n)for(i in n)n.hasOwnProperty(i)&&(t[i]=n[i]);return t}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{value:function(e,t){if(null==this)throw new TypeError('"this" is null or not defined');var r=Object(this),n=r.length>>>0;if(0===n)return!1;for(var i=0|t,s=Math.max(0>i?n-Math.abs(i):i,0);n>s;){if(function(e,t){return e===t||"number"==typeof e&&"number"==typeof t&&isNaN(e)&&isNaN(t)}(r[s],e))return!0;s++}return!1}});var q=function(){function n(e){s(this,n),this.accessToken=(e=e||{}).accessToken,this.clientId=e.clientId,this.clientSecret=e.clientSecret,this.selectUser=e.selectUser,this.selectAdmin=e.selectAdmin}return o(n,[{key:"setAccessToken",value:function(e){this.accessToken=e}},{key:"getAccessToken",value:function(){return this.accessToken}},{key:"setClientId",value:function(e){this.clientId=e}},{key:"getClientId",value:function(){return this.clientId}},{key:"setClientSecret",value:function(e){this.clientSecret=e}},{key:"getClientSecret",value:function(){return this.clientSecret}},{key:"getAuthenticationUrl",value:function(e,t){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"token",n=this.getClientId(),i="https://www.dropbox.com/oauth2/authorize";if(!n)throw Error("A client id is required. You can set the client id using .setClientId().");if("code"!==r&&!e)throw Error("A redirect uri is required.");if(!["code","token"].includes(r))throw Error("Authorization type must be code or token");var s=void 0;return s="code"===r?i+"?response_type=code&client_id="+n:i+"?response_type=token&client_id="+n,e&&(s+="&redirect_uri="+e),t&&(s+="&state="+t),s}},{key:"getAccessTokenFromCode",value:function(e,t){var r=this.getClientId(),n=this.getClientSecret();if(!r)throw Error("A client id is required. You can set the client id using .setClientId().");if(!n)throw Error("A client secret is required. You can set the client id using .setClientSecret().");var i="https://api.dropboxapi.com/oauth2/token?code="+t+"&grant_type=authorization_code&redirect_uri="+e+"&client_id="+r+"&client_secret="+n;return fetch(i,{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"}}).then(function(e){return function(e){var t=e.clone();return new Promise(function(r){e.json().then(function(e){return r(e)}).catch(function(){return t.text().then(function(e){return r(e)})})}).then(function(t){return[e,t]})}(e)}).then(function(e){var t=c(e,2),r=t[0],n=t[1];if(!r.ok)throw{error:n,response:r,status:r.status};return n.access_token})}},{key:"authenticateWithCordova",value:function(e,t){function r(){window.setTimeout(function(){u.close()},10),t()}function n(r){if(r.url.indexOf("&error=")>-1)window.setTimeout(function(){u.close()},10),t();else{var n=r.url.indexOf("#access_token="),i=r.url.indexOf("&token_type=");if(n>-1){n+=14,window.setTimeout(function(){u.close()},10);var s=r.url.substring(n,i);e(s)}}}function i(){o||(u.removeEventListener("loaderror",r),u.removeEventListener("loadstop",n),u.removeEventListener("exit",i),o=!0)}var s=this.getAuthenticationUrl("https://www.dropbox.com/1/oauth2/redirect_receiver"),o=!1,u=window.open(s,"_blank");u.addEventListener("loaderror",r),u.addEventListener("loadstop",n),u.addEventListener("exit",i)}},{key:"request",value:function(e,t,r,n,i){var s=null;switch(i){case"rpc":s=this.getRpcRequest();break;case"download":s=this.getDownloadRequest();break;case"upload":s=this.getUploadRequest();break;default:throw Error("Invalid request style: "+i)}var o={selectUser:this.selectUser,selectAdmin:this.selectAdmin,clientId:this.getClientId(),clientSecret:this.getClientSecret()};return s(e,t,r,n,this.getAccessToken(),o)}},{key:"setRpcRequest",value:function(e){this.rpcRequest=e}},{key:"getRpcRequest",value:function(){return void 0===this.rpcRequest&&(this.rpcRequest=function(e,r,n,i,s,o){var u={method:"POST",body:r?JSON.stringify(r):null},a={};r&&(a["Content-Type"]="application/json");var p="";switch(n){case"app":if(!o.clientId||!o.clientSecret)throw Error("A client id and secret is required for this function");p=new y(o.clientId+":"+o.clientSecret).toString("base64"),a.Authorization="Basic "+p;break;case"team":case"user":a.Authorization="Bearer "+s;break;case"noauth":break;default:throw Error("Unhandled auth type: "+n)}return o&&(o.selectUser&&(a["Dropbox-API-Select-User"]=o.selectUser),o.selectAdmin&&(a["Dropbox-API-Select-Admin"]=o.selectAdmin)),u.headers=a,fetch(t(i)+e,u).then(function(e){return function(e){var t=e.clone();return new Promise(function(r){e.json().then(function(e){return r(e)}).catch(function(){return t.text().then(function(e){return r(e)})})}).then(function(t){return[e,t]})}(e)}).then(function(e){var t=c(e,2),r=t[0],n=t[1];if(!r.ok)throw{error:n,response:r,status:r.status};return n})}),this.rpcRequest}},{key:"setDownloadRequest",value:function(e){this.downloadRequest=e}},{key:"getDownloadRequest",value:function(){return void 0===this.downloadRequest&&(this.downloadRequest=function(n,i,s,o,u,a){if("user"!==s)throw Error("Unexpected auth type: "+s);var p={method:"POST",headers:{Authorization:"Bearer "+u,"Dropbox-API-Arg":r(i)}};return a&&(a.selectUser&&(p.headers["Dropbox-API-Select-User"]=a.selectUser),a.selectAdmin&&(p.headers["Dropbox-API-Select-Admin"]=a.selectAdmin)),fetch(t(o)+n,p).then(function(t){return function(t){return t.ok?e()?t.blob():t.buffer():t.text()}(t).then(function(e){return[t,e]})}).then(function(t){var r=c(t,2);return function(t,r){if(!t.ok)throw{error:r,response:t,status:t.status};var n=JSON.parse(t.headers.get("dropbox-api-result"));return e()?n.fileBlob=r:n.fileBinary=r,n}(r[0],r[1])})}),this.downloadRequest}},{key:"setUploadRequest",value:function(e){this.uploadRequest=e}},{key:"getUploadRequest",value:function(){return void 0===this.uploadRequest&&(this.uploadRequest=function(e,n,i,s,o,u){if("user"!==i)throw Error("Unexpected auth type: "+i);var a=n.contents;delete n.contents;var p={body:a,method:"POST",headers:{Authorization:"Bearer "+o,"Content-Type":"application/octet-stream","Dropbox-API-Arg":r(n)}};return u&&(u.selectUser&&(p.headers["Dropbox-API-Select-User"]=u.selectUser),u.selectAdmin&&(p.headers["Dropbox-API-Select-Admin"]=u.selectAdmin)),fetch(t(s)+e,p).then(function(e){return function(e){var t=e.clone();return new Promise(function(r){e.json().then(function(e){return r(e)}).catch(function(){return t.text().then(function(e){return r(e)})})}).then(function(t){return[e,t]})}(e)}).then(function(e){var t=c(e,2),r=t[0],n=t[1];if(!r.ok)throw{error:n,response:r,status:r.status};return n})}),this.uploadRequest}}]),n}(),w=function(e){function t(e){s(this,t);var r=a(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return Object.assign(r,i),r}return u(t,q),o(t,[{key:"filesGetSharedLinkFile",value:function(e){return this.request("sharing/get_shared_link_file",e,"api","download")}}]),t}(),k=Object.freeze({Dropbox:w}),A={};A.teamDevicesListMemberDevices=function(e){return this.request("team/devices/list_member_devices",e,"team","api","rpc")},A.teamDevicesListMembersDevices=function(e){return this.request("team/devices/list_members_devices",e,"team","api","rpc")},A.teamDevicesListTeamDevices=function(e){return this.request("team/devices/list_team_devices",e,"team","api","rpc")},A.teamDevicesRevokeDeviceSession=function(e){return this.request("team/devices/revoke_device_session",e,"team","api","rpc")},A.teamDevicesRevokeDeviceSessionBatch=function(e){return this.request("team/devices/revoke_device_session_batch",e,"team","api","rpc")},A.teamFeaturesGetValues=function(e){return this.request("team/features/get_values",e,"team","api","rpc")},A.teamGetInfo=function(e){return this.request("team/get_info",e,"team","api","rpc")},A.teamGroupsCreate=function(e){return this.request("team/groups/create",e,"team","api","rpc")},A.teamGroupsDelete=function(e){return this.request("team/groups/delete",e,"team","api","rpc")},A.teamGroupsGetInfo=function(e){return this.request("team/groups/get_info",e,"team","api","rpc")},A.teamGroupsJobStatusGet=function(e){return this.request("team/groups/job_status/get",e,"team","api","rpc")},A.teamGroupsList=function(e){return this.request("team/groups/list",e,"team","api","rpc")},A.teamGroupsListContinue=function(e){return this.request("team/groups/list/continue",e,"team","api","rpc")},A.teamGroupsMembersAdd=function(e){return this.request("team/groups/members/add",e,"team","api","rpc")},A.teamGroupsMembersList=function(e){return this.request("team/groups/members/list",e,"team","api","rpc")},A.teamGroupsMembersListContinue=function(e){return this.request("team/groups/members/list/continue",e,"team","api","rpc")},A.teamGroupsMembersRemove=function(e){return this.request("team/groups/members/remove",e,"team","api","rpc")},A.teamGroupsMembersSetAccessType=function(e){return this.request("team/groups/members/set_access_type",e,"team","api","rpc")},A.teamGroupsUpdate=function(e){return this.request("team/groups/update",e,"team","api","rpc")},A.teamLinkedAppsListMemberLinkedApps=function(e){return this.request("team/linked_apps/list_member_linked_apps",e,"team","api","rpc")},A.teamLinkedAppsListMembersLinkedApps=function(e){return this.request("team/linked_apps/list_members_linked_apps",e,"team","api","rpc")},A.teamLinkedAppsListTeamLinkedApps=function(e){return this.request("team/linked_apps/list_team_linked_apps",e,"team","api","rpc")},A.teamLinkedAppsRevokeLinkedApp=function(e){return this.request("team/linked_apps/revoke_linked_app",e,"team","api","rpc")},A.teamLinkedAppsRevokeLinkedAppBatch=function(e){return this.request("team/linked_apps/revoke_linked_app_batch",e,"team","api","rpc")},A.teamMemberSpaceLimitsExcludedUsersAdd=function(e){return this.request("team/member_space_limits/excluded_users/add",e,"team","api","rpc")},A.teamMemberSpaceLimitsExcludedUsersList=function(e){return this.request("team/member_space_limits/excluded_users/list",e,"team","api","rpc")},A.teamMemberSpaceLimitsExcludedUsersListContinue=function(e){return this.request("team/member_space_limits/excluded_users/list/continue",e,"team","api","rpc")},A.teamMemberSpaceLimitsExcludedUsersRemove=function(e){return this.request("team/member_space_limits/excluded_users/remove",e,"team","api","rpc")},A.teamMemberSpaceLimitsGetCustomQuota=function(e){return this.request("team/member_space_limits/get_custom_quota",e,"team","api","rpc")},A.teamMemberSpaceLimitsRemoveCustomQuota=function(e){return this.request("team/member_space_limits/remove_custom_quota",e,"team","api","rpc")},A.teamMemberSpaceLimitsSetCustomQuota=function(e){return this.request("team/member_space_limits/set_custom_quota",e,"team","api","rpc")},A.teamMembersAdd=function(e){return this.request("team/members/add",e,"team","api","rpc")},A.teamMembersAddJobStatusGet=function(e){return this.request("team/members/add/job_status/get",e,"team","api","rpc")},A.teamMembersGetInfo=function(e){return this.request("team/members/get_info",e,"team","api","rpc")},A.teamMembersList=function(e){return this.request("team/members/list",e,"team","api","rpc")},A.teamMembersListContinue=function(e){return this.request("team/members/list/continue",e,"team","api","rpc")},A.teamMembersRecover=function(e){return this.request("team/members/recover",e,"team","api","rpc")},A.teamMembersRemove=function(e){return this.request("team/members/remove",e,"team","api","rpc")},A.teamMembersRemoveJobStatusGet=function(e){return this.request("team/members/remove/job_status/get",e,"team","api","rpc")},A.teamMembersSendWelcomeEmail=function(e){return this.request("team/members/send_welcome_email",e,"team","api","rpc")},A.teamMembersSetAdminPermissions=function(e){return this.request("team/members/set_admin_permissions",e,"team","api","rpc")},A.teamMembersSetProfile=function(e){return this.request("team/members/set_profile",e,"team","api","rpc")},A.teamMembersSuspend=function(e){return this.request("team/members/suspend",e,"team","api","rpc")},A.teamMembersUnsuspend=function(e){return this.request("team/members/unsuspend",e,"team","api","rpc")},A.teamNamespacesList=function(e){return this.request("team/namespaces/list",e,"team","api","rpc")},A.teamNamespacesListContinue=function(e){return this.request("team/namespaces/list/continue",e,"team","api","rpc")},A.teamPropertiesTemplateAdd=function(e){return this.request("team/properties/template/add",e,"team","api","rpc")},A.teamPropertiesTemplateGet=function(e){return this.request("team/properties/template/get",e,"team","api","rpc")},A.teamPropertiesTemplateList=function(e){return this.request("team/properties/template/list",e,"team","api","rpc")},A.teamPropertiesTemplateUpdate=function(e){return this.request("team/properties/template/update",e,"team","api","rpc")},A.teamReportsGetActivity=function(e){return this.request("team/reports/get_activity",e,"team","api","rpc")},A.teamReportsGetDevices=function(e){return this.request("team/reports/get_devices",e,"team","api","rpc")},A.teamReportsGetMembership=function(e){return this.request("team/reports/get_membership",e,"team","api","rpc")},A.teamReportsGetStorage=function(e){return this.request("team/reports/get_storage",e,"team","api","rpc")},A.teamTeamFolderActivate=function(e){return this.request("team/team_folder/activate",e,"team","api","rpc")},A.teamTeamFolderArchive=function(e){return this.request("team/team_folder/archive",e,"team","api","rpc")},A.teamTeamFolderArchiveCheck=function(e){return this.request("team/team_folder/archive/check",e,"team","api","rpc")},A.teamTeamFolderCreate=function(e){return this.request("team/team_folder/create",e,"team","api","rpc")},A.teamTeamFolderGetInfo=function(e){return this.request("team/team_folder/get_info",e,"team","api","rpc")},A.teamTeamFolderList=function(e){return this.request("team/team_folder/list",e,"team","api","rpc")},A.teamTeamFolderListContinue=function(e){return this.request("team/team_folder/list/continue",e,"team","api","rpc")},A.teamTeamFolderPermanentlyDelete=function(e){return this.request("team/team_folder/permanently_delete",e,"team","api","rpc")},A.teamTeamFolderRename=function(e){return this.request("team/team_folder/rename",e,"team","api","rpc")},A.teamTeamFolderUpdateSyncSettings=function(e){return this.request("team/team_folder/update_sync_settings",e,"team","api","rpc")},A.teamTokenGetAuthenticatedAdmin=function(e){return this.request("team/token/get_authenticated_admin",e,"team","api","rpc")};var S=function(e){function t(e){s(this,t);var r=a(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return Object.assign(r,A),r}return u(t,q),o(t,[{key:"actAsUser",value:function(e){return new w({accessToken:this.accessToken,clientId:this.clientId,selectUser:e})}}]),t}(),L=Object.freeze({DropboxTeam:S});return{Dropbox:k.Dropbox,DropboxTeam:L.DropboxTeam}});
 
 
 /***/ }),
-/* 199 */
+/* 202 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85299,24 +85480,30 @@ module.exports = __webpack_require__.p + "static/media/vol65no45.92adb58d.png";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_logo_svg__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_logo_svg__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_logo_svg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_logo_svg__);
 function Nav(){return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('nav',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img',{className:'logo',src:__WEBPACK_IMPORTED_MODULE_2__images_logo_svg___default.a,alt:'logo'}),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('ul',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/'},'works')),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('li',null,__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],{to:'/about'},'about'))),__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div',{className:'line'}));}
 
 /***/ }),
-/* 200 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/media/logo.d51be021.svg";
 
 /***/ }),
-/* 201 */
+/* 204 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 202 */
+/* 205 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 206 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85354,4 +85541,4 @@ registerValidSW(swUrl);}}).catch(function(){console.log('No internet connection 
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.5fb678df.js.map
+//# sourceMappingURL=main.4a8aba4f.js.map

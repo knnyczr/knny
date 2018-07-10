@@ -38,8 +38,7 @@ export default class Works extends Component{
               </div>
 
               <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+                This is an educational app for developers and designers to learn about colors, and color relationships through a dynamic color picker.
                 <br />
                 <br />
 
@@ -68,13 +67,12 @@ export default class Works extends Component{
               <div className="media">
 
                 <div className="media-content">
-                  <p className="title is-4">I love Hue</p>
+                  <p className="title is-4">Hue Clone</p>
                 </div>
               </div>
 
               <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+                I love hue is the original single player game that makes puzzles out of gradients. This game is a clone of called HueClone.
                 <br />
                 <br />
 
@@ -105,8 +103,8 @@ export default class Works extends Component{
               </div>
 
               <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+                A "U" friendly digital space to allow it's user to express your "U"-ness. A blog that allows you to upload snippets of your life and both with other over stuff you love.
+
                 <br />
                 <br />
 
@@ -138,8 +136,7 @@ export default class Works extends Component{
               </div>
 
               <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+                One poster everyday for a year to develop aesthetics, refine story telling, and share beautiful design.
                 <br />
                 <br />
 
@@ -172,8 +169,8 @@ export default class Works extends Component{
               </div>
 
               <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+                LIKWID is a fictional cold press bottled juice company.
+                This is an experimental branding project featuring packaging design, company brand, and advertising.
                 <br />
                 <br />
 
@@ -204,8 +201,8 @@ export default class Works extends Component{
               </div>
 
               <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+                (2016) Mixed media <br />
+                Experimental sculptural work for Senior Thesis show features self made benches, seven T8 lights, and printed color gradients.
                 <br />
                 <br />
 
@@ -236,8 +233,7 @@ export default class Works extends Component{
               </div>
 
               <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+                Amy's Place is a local diner in localed in downtown Buffalo known for it's vegan/vegetarian/meat lover's menu. Most of it's menu is customizable to meet everyone's needs.
                 <br />
                 <br />
 
@@ -269,8 +265,8 @@ export default class Works extends Component{
               </div>
 
               <div className="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus nec iaculis mauris.
+                The Spectrum is an independent student publication at the University at Buffalo campus.
+                This project features the best works I've done while Creative Director. 
                 <br />
                 <br />
 
