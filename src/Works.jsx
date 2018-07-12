@@ -9,6 +9,7 @@ import spectrum from './images/spectrum.png';
 import ulog from './images/ulog.png';
 import hue from './images/ilovehue.png';
 import palet from './images/pal_et.png';
+import tictactoe from './images/tictactoe.png';
 import 'font-awesome/css/font-awesome.min.css';
 import FontAwesome from 'react-fontawesome';
 
@@ -16,16 +17,58 @@ export default class Works extends Component{
   constructor(props) {
     super(props);
     this.state = {}
+    this.componentDidMount = this.componentDidMount.bind(this);
+    this.removingclass = this.removingclass.bind(this)
+    this.changeloader = this.changeloader.bind(this)
   }
+  componentDidMount(){
+    let main = document.getElementById("main")
+    main.classList.add("loading")
+    let cards = [...document.getElementsByClassName("card")]
+    this.changeloader()
+    cards.map((d) =>{
+      d.classList.add("loadingcards")
+      this.removingclass()
+    })
+  }
+  removingclass(){
+    console.log("we in hereee")
+    setTimeout(() => {
+      let cards = [...document.getElementsByClassName("card")]
+      let main = document.getElementById("main")
+      main.classList.remove("loading")
+      cards.map((d) => {
+        d.classList.remove("loadingcards")
+      })
+    }, 5000)
+  }
+  changeloader(){
+    setTimeout(() => {
+      document.getElementById("loader").innerHTML = "30%";
+    }, 500)
+    setTimeout(() => {
+      document.getElementById("loader").innerHTML = "50%";
+    }, 1000)
+    setTimeout(() => {
+      document.getElementById("loader").innerHTML = "80%";
+    }, 2000)
+    setTimeout(() => {
+      document.getElementById("loader").innerHTML = "100%";
+    }, 2500)
+    setTimeout(() => {
+      document.getElementById("loader").innerHTML = " ";
+    }, 4000)
+  }
+
   render(){
     return(
-      <div className="wrapper">
+      <div className="wrapper" onLoad={() => this.componentDidMount()}>
         <div className="inner">
 
           <div className="card">
             <div className="card-image">
               <figure className="image is-5by3">
-                <Link to='/works/thesis'><img style={{ backgroundImage: `url(${palet})` }} /></Link>
+                <a href="https://github.com/knnyczr/Pal_et"><img style={{ backgroundImage: `url(${palet})` }} /></a>
               </figure>
             </div>
 
@@ -48,7 +91,7 @@ export default class Works extends Component{
                     <span><FontAwesome className="api" name='circle' /> API</span>
 
                 <br />
-                <p><Link to='/works/thesis'>view project nEED TO DEPLOY</Link><br />
+                <p><Link to='/works/thesis'></Link><br />
                 <a href="https://github.com/knnyczr/Pal_et">view GitHub</a>
                 </p>
                 <br />
@@ -61,7 +104,7 @@ export default class Works extends Component{
           <div className="card">
             <div className="card-image">
               <figure className="image is-5by3">
-                <a href="https://ilovehueclone.herokuapp.com/"><img style={{ backgroundImage: `url(${hue})` }} /></a>
+                <a href="http://ilovehueclone-knnyczr.bitballoon.com/"><img style={{ backgroundImage: `url(${hue})` }} /></a>
               </figure>
             </div>
 
@@ -81,7 +124,7 @@ export default class Works extends Component{
                     <span><FontAwesome className="jQuery" name='circle' /> jQuery</span>
 
                 <br />
-                <p><a href="https://ilovehueclone.herokuapp.com/">view project NEED TO DEPLOY</a><br />
+                <p><a href="http://ilovehueclone-knnyczr.bitballoon.com/">view project</a><br />
                 <a href="https://github.com/knnyczr/I-love-Hue">view GitHub</a>
                 </p>
                 <br />
@@ -94,7 +137,40 @@ export default class Works extends Component{
           <div className="card">
             <div className="card-image">
               <figure className="image is-5by3">
-                <Link to='/works/thesis'><img style={{ backgroundImage: `url(${ulog})` }} /></Link>
+                <a href="http://tictactoe-knnyczr.bitballoon.com/"><img style={{ backgroundImage: `url(${tictactoe})` }} /></a>
+              </figure>
+            </div>
+
+            <div className="card-content">
+              <div className="media">
+
+                <div className="media-content">
+                  <p className="title is-4">Tic-Tac-Toe</p>
+                </div>
+              </div>
+
+              <div className="content">
+                Classic game of tictactoe, with a modern clean red/blue theme. Play with a friend!
+                <br />
+                <br />
+
+                    <span><FontAwesome className="jQuery" name='circle' /> jQuery</span>
+
+                <br />
+                <p><a href="http://ilovehueclone-knnyczr.bitballoon.com/">view project</a><br />
+                <a href="http://tictactoe-knnyczr.bitballoon.com/">view GitHub</a>
+                </p>
+                <br />
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="card">
+            <div className="card-image">
+              <figure className="image is-5by3">
+                <a href='https://ulogin.herokuapp.com/posts'><img style={{ backgroundImage: `url(${ulog})` }} /></a>
               </figure>
             </div>
 
@@ -114,7 +190,6 @@ export default class Works extends Component{
 
                     <span><FontAwesome className="express" name='circle' /> Express</span>
                     <span><FontAwesome className="bulma" name='circle' /> Bulma</span>
-                    <span><FontAwesome className="indesign" name='circle' /> InDesign</span>
 
                 <br />
                 <p><a href='https://ulogin.herokuapp.com/posts'>view project</a> <br />
@@ -294,6 +369,7 @@ export default class Works extends Component{
 
 
         </div>
+        <span id="loader">0%</span>
       </div>
     )
   }

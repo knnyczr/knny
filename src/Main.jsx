@@ -49,7 +49,7 @@ export default class Main extends Component{
   render(){
     let posterdisplays = this.state.posterdisplays
     return(
-      <div className="main">
+      <div id="main">
         <Switch>
           <Route path="/works/amys" component={Amys}/>
           <Route path="/works/posters" render={() => <Posters displays={posterdisplays} /> } />

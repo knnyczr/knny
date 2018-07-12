@@ -35,15 +35,51 @@ ul > li{
 a{
   text-decoration: none;
 }
-.main{
+#main{
   border: 1px solid black;
   width: 96%;
   height: 83vh;
   margin: 20px auto;
-  overflow: hidden;
+}
+#loader{
+  margin: 0 auto;
 }
 .line{
   margin: 0 auto;
   border-bottom: 1px solid black;
   width: 95%;
+}
+.loading{
+  transition: 2s;
+  animation: loading 4s linear;
+}
+.loadingcards{
+  animation: fadedelay 5s linear;
+}
+@keyframes loading{
+  0%{
+    height: 1px;
+    width: 0px;
+    display: none;
+  }
+  50%{
+    height: 30px;
+    width: 0px;
+  }
+  60%{
+    height: 83vh;
+    width: 0px;
+  }
+  100%{
+    width: 96%;
+    display: block;
+  }
+}
+@keyframes fadedelay{
+  0%, 80%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
