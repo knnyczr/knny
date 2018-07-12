@@ -157,8 +157,8 @@ export default class Works extends Component{
                     <span><FontAwesome className="jQuery" name='circle' /> jQuery</span>
 
                 <br />
-                <p><a href="http://ilovehueclone-knnyczr.bitballoon.com/">view project</a><br />
-                <a href="http://tictactoe-knnyczr.bitballoon.com/">view GitHub</a>
+                <p><a href="http://tictactoe-knnyczr.bitballoon.com/">view project</a><br />
+                <a href="https://github.com/knnyczr/tictactoe">view GitHub</a>
                 </p>
                 <br />
               </div>
