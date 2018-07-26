@@ -315,7 +315,7 @@ export default class Works extends Component{
               </div>
 
               <div className="content">
-                Amy's Place is a local diner in localed in downtown Buffalo known for it's vegan/vegetarian/meat lover's menu. Most of it's menu is customizable to meet everyone's needs.
+                Amy's Place is a local diner in localed in downtown Buffalo known for it's vegan/vegetarian/meat lover's menu.
                 <br />
                 <br />
 

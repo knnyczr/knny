@@ -60,7 +60,6 @@ export default class Main extends Component{
           <Route path="/" component={Works}/>
           <Redirect to="/" />
         </Switch>
-
       </div>
     );
   }

@@ -24,3 +24,24 @@
   background-size: cover;
   margin: 40px auto;
 }
+@media only screen and (max-width : 375px)  {
+  .aboutwrapper{
+    display: block;
+    height: 82vh;
+    overflow: auto;
+  }
+  .about{
+    display: block;
+    padding: 5px;
+    overflow: auto;
+  }
+  .photo{
+    height: 180px;
+    width: 180px;
+    margin: 15px auto 5px;
+  }
+  .section{
+    padding: 15px;
+    font-size: 12px;
+  }
+}

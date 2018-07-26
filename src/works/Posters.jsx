@@ -28,7 +28,6 @@ export default function Posters(props) {
         <div className="posterscontent">
           {
             posterdisplays.map((d,i) => {
-              // console.log(d)
               return <div key={i} className="posterclass" style={{ backgroundImage: `url(${d.link})` }}></div>
             })
           }

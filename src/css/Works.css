@@ -68,3 +68,28 @@ img {
 .content > span{
   margin-right: 15px;
 }
+
+/* <---------------- --------------------> */
+    /* ipad media portrait-mode query */
+
+    @media only screen and (max-width : 375px)  {
+      .inner{
+        grid-template-columns: 1fr;
+      }
+      p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+      }
+      div{
+        font-size: 12px;
+      }
+      .card{
+        margin: 10px auto;
+        height: 470px;
+        width: 320px;
+      }
+      .content span{
+        display: inline-block;
+      }
+
+    }

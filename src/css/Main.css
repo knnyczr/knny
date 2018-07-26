@@ -41,6 +41,9 @@ a{
   height: 83vh;
   margin: 20px auto;
 }
+div{
+  font-size: 14px;
+}
 #loader{
   margin: 0 auto;
 }
@@ -81,5 +84,23 @@ a{
   }
   100%{
     opacity: 1;
+  }
+}
+@media only screen and (max-width : 375px)  {
+  #main{
+    height: 85vh;
+    margin: 5px auto;
+  }
+  .logo{
+    width: 15%;
+    min-width: 150px;
+    margin-top: 5%;
+  }
+  nav > ul{
+    right: 40px;
+    top: 20px;
+  }
+  ul > li{
+    font-size: 12px;
   }
 }
