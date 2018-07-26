@@ -72,7 +72,7 @@ img {
 /* <---------------- --------------------> */
     /* ipad media portrait-mode query */
 
-    @media only screen and (max-width : 375px)  {
+    @media only screen and (max-width : 414px)  {
       .inner{
         grid-template-columns: 1fr;
       }
@@ -88,7 +88,7 @@ img {
         height: 470px;
         width: 320px;
       }
-      .content span{
+      .content > span{
         display: inline-block;
       }
 

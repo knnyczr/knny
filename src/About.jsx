@@ -12,7 +12,7 @@ export default function About(){
 
             <div className="photo"></div>
 
-            <div className="section">
+            <div className="sec">
               <span>who?</span><br />
               I'm Kenneth Cruz,
               but everyone except my mom calls me Kenny <br />
@@ -26,7 +26,7 @@ export default function About(){
               and full stack applications for clients.
             </div>
 
-            <div className="section">
+            <div className="sec">
                 <span>Languages/Technologies/Frameworks</span> <br />
                 English<br />
                 Spanish<br />
