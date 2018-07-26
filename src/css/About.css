@@ -27,7 +27,7 @@
 @media only screen and (max-width : 375px)  {
   .aboutwrapper{
     display: block;
-    height: 82vh;
+    height: 85vh;
     overflow: auto;
   }
   .about{
