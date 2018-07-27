@@ -87,34 +87,13 @@ div{
   }
 }
 
-/* <---------------- --------------------> */
-/* iphone 6 plus portrait-mode media query */
-
-    @media only screen and (max-width : 414px)  {
-      #main{
-        height: 80vh;
-        margin: 5px auto;
-      }
-      .logo{
-        width: 15%;
-        min-width: 150px;
-        margin-top: 5%;
-      }
-      nav > ul{
-        right: 40px;
-        top: 20px;
-      }
-      ul > li{
-        font-size: 12px;
-      }
-    }
 
 /* <---------------- --------------------> */
 /* ipad portrait-mode media query */
 
     @media only screen and (max-width : 768px)  {
       #main{
-        height: 85vh;
+        height: 82vh;
         margin: 5px auto;
       }
       .logo{
@@ -125,6 +104,28 @@ div{
       nav > ul{
         right: 40px;
         top: 20px;
+      }
+      ul > li{
+        font-size: 12px;
+      }
+    }
+
+    /* <---------------- --------------------> */
+    /* iphone 6 plus portrait-mode media query */
+
+    @media only screen and (max-width : 414px)  {
+      #main{
+        height: 80vh;
+        margin: 5px auto;
+      }
+      .logo{
+        width: 15%;
+        min-width: 150px;
+        margin-top: 3%;
+      }
+      nav > ul{
+        right: 40px;
+        top: 15px;
       }
       ul > li{
         font-size: 12px;

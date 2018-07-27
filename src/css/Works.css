@@ -71,11 +71,29 @@ img {
 }
 
 /* <---------------- --------------------> */
-/* iphone 6 plus media portrait-mode query */
+    /* ipad portrait-mode media query */
 
-    @media only screen and (max-width : 414px)  {
+    @media only screen and (max-width : 768px)  {
       .inner{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .card{
+        height:480px;
+      }
+      div{
+        font-size: 10px;
+      }
+      .content > span{
+        display: inline-block;
+      }
+    }
+    
+    /* <---------------- --------------------> */
+    /* iphone 6 plus media portrait-mode query */
+
+    @media only screen and (max-width : 400px)  {
+      .inner{
+        grid-template-columns: repeat(1, 1fr);
       }
       p{
         font-family: 'Roboto', sans-serif;
@@ -88,24 +106,6 @@ img {
         margin: 10px auto;
         height: 470px;
         width: 320px;
-      }
-      .content > span{
-        display: inline-block;
-      }
-    }
-
-/* <---------------- --------------------> */
-    /* ipad portrait-mode media query */
-
-    @media only screen and (max-width : 768px)  {
-      .inner{
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .card{
-        height:480px;
-      }
-      div{
-        font-size: 10px;
       }
       .content > span{
         display: inline-block;
