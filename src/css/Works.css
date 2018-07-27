@@ -19,6 +19,7 @@
   padding: 5%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  scroll-behavior: smooth;
 }
 p{
   font-family: 'Roboto', sans-serif;
@@ -70,7 +71,7 @@ img {
 }
 
 /* <---------------- --------------------> */
-    /* ipad media portrait-mode query */
+/* iphone 6 plus media portrait-mode query */
 
     @media only screen and (max-width : 414px)  {
       .inner{
@@ -91,5 +92,22 @@ img {
       .content > span{
         display: inline-block;
       }
+    }
 
+/* <---------------- --------------------> */
+    /* ipad portrait-mode media query */
+
+    @media only screen and (max-width : 768px)  {
+      .inner{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .card{
+        height:480px;
+      }
+      div{
+        font-size: 10px;
+      }
+      .content > span{
+        display: inline-block;
+      }
     }

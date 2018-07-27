@@ -24,24 +24,51 @@
   background-size: cover;
   margin: 40px auto;
 }
-@media only screen and (max-width : 414px)  {
-  .aboutwrapper{
-    display: block;
-    height: 84vh;
-    overflow: auto;
-  }
-  .about{
-    display: block;
-    padding: 5px;
-    overflow: auto;
-  }
-  .photo{
-    height: 170px;
-    width: 170px;
-    margin: 10px auto 0px;
-  }
-  .sec{
-    padding: 15px;
-    font-size: 12px;
-  }
-}
+
+/* <---------------- --------------------> */
+/* iphone 6 plus media portrait-mode query */
+
+    @media only screen and (max-width : 414px)  {
+      .aboutwrapper{
+        display: block;
+        height: 84vh;
+        overflow: auto;
+      }
+      .about{
+        display: block;
+        padding: 5px;
+        overflow: auto;
+      }
+      .photo{
+        height: 170px;
+        width: 170px;
+        margin: 10px auto 0px;
+      }
+      .sec{
+        padding: 15px;
+        font-size: 12px;
+      }
+    }
+
+
+/* <---------------- --------------------> */
+  /* ipad portrait-mode media query */
+
+    @media only screen and (max-width : 768px)  {
+      .photo{
+        height: 160px;
+        width: 160px;
+        margin: 0 auto;
+      }
+      .aboutwrapper{
+        height: 84vh;
+        overflow: auto;
+      }
+      .about{
+        display: inline-block;
+        overflow: auto;
+      }
+      .sec{
+        padding: 5%;
+      }
+    }
