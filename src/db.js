@@ -1,12 +1,48 @@
 export default {    
     'first': {
-        url: 'this is a thing', 
-        name: 'this is the name of the thing', 
-        picture: 'this is the picture of the thing'
+        title: 'this is a thing', 
+        description: 'this is the name of the thing', 
+        image: 'this is the picture of the thing',
+        route: 'this is the picture of the thing',
+        github: 'this is the picture of the thing',
+        react: 'this is the picture of the thing',
+        Express: 'this is the picture of the thing',
+        bulma: 'this is the picture of the thing',
+        api: 'this is the picture of the thing',
+        jquery: 'this is the picture of the thing',
+        photoshop: 'this is the picture of the thing',
+        illustrator: 'this is the picture of the thing',
+        indesign: 'this is the picture of the thing',
     },
-    'second': {
-        url: 'this is the url',
-        name: 'this is the name of the thing', 
-        picture: 'this is the picture of the thing'
-    }
+    'first': {
+        title: 'this is a thing', 
+        description: 'this is the name of the thing', 
+        image: 'this is the picture of the thing',
+        route: 'this is the picture of the thing',
+        github: 'this is the picture of the thing',
+        react: 'this is the picture of the thing',
+        Express: 'this is the picture of the thing',
+        bulma: 'this is the picture of the thing',
+        api: 'this is the picture of the thing',
+        jquery: 'this is the picture of the thing',
+        photoshop: 'this is the picture of the thing',
+        illustrator: 'this is the picture of the thing',
+        indesign: 'this is the picture of the thing',
+    },
+    'first': {
+        title: 'this is a thing', 
+        description: 'this is the name of the thing', 
+        image: 'this is the picture of the thing',
+        route: 'this is the picture of the thing',
+        github: 'this is the picture of the thing',
+        react: 'this is the picture of the thing',
+        Express: 'this is the picture of the thing',
+        bulma: 'this is the picture of the thing',
+        api: 'this is the picture of the thing',
+        jquery: 'this is the picture of the thing',
+        photoshop: 'this is the picture of the thing',
+        illustrator: 'this is the picture of the thing',
+        indesign: 'this is the picture of the thing',
+    },
+    
 }
