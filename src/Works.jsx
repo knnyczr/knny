@@ -12,6 +12,7 @@ import palet from './images/pal_et.png';
 import tictactoe from './images/tictactoe.png';
 import 'font-awesome/css/font-awesome.min.css';
 import FontAwesome from 'react-fontawesome';
+import localdatabase from './db.js'; 
 
 export default class Works extends Component{
   constructor(props) {
@@ -20,8 +21,9 @@ export default class Works extends Component{
     this.componentDidMount = this.componentDidMount.bind(this);
     this.removingclass = this.removingclass.bind(this)
     this.changeloader = this.changeloader.bind(this)
-  }
+  }  
   componentDidMount(){
+    console.log(localdatabase)
     let main = document.getElementById("main")
     main.classList.add("loading")
     let cards = [...document.getElementsByClassName("card")]
@@ -32,7 +34,7 @@ export default class Works extends Component{
     })
   }
   removingclass(){
-    console.log("we in hereee")
+    // console.log("we in hereee")
     setTimeout(() => {
       let cards = [...document.getElementsByClassName("card")]
       let main = document.getElementById("main")
