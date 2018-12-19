@@ -8,8 +8,8 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
 module.exports = {
     entry: "./src/app.js",
     output: {
-      path: path.resolve(‘dist’),
-      filename: ‘bundled.js’
+      path: path.resolve('dist'),
+      filename: 'bundled.js'
     },
   module: {
     rules: [
