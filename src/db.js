@@ -2,7 +2,7 @@ export default [
     {
         title: 'Pal Et', 
         description: 'This is an educational app for developers and designers to learn about colors, and color relationships through a dynamic color picker.', 
-        image: 'palet',
+        image: './pal_et.png',
         route: '',
         github: 'https://github.com/knnyczr/Pal_et',
         react: true,
@@ -17,7 +17,7 @@ export default [
     {
         title: 'Hue Clone', 
         description: 'I love hue is the original single player game that makes puzzles out of gradients. This game is a clone of called HueClone.', 
-        image: 'hue',
+        image: 'images/ilovehue.png',
         route: 'http://ilovehueclone-knnyczr.bitballoon.com/',
         github: 'https://github.com/knnyczr/I-love-Hue',
         react: false,
@@ -32,7 +32,7 @@ export default [
     {
         title: 'Tic Tac Toe', 
         description: 'Classic game of tictactoe, with a modern eye popping theme. Play with a friend!', 
-        image: 'tictactoe',
+        image: 'images/tictactoe.png',
         route: 'http://tictactoe-knnyczr.bitballoon.com/',
         github: 'https://github.com/knnyczr/tictactoe',
         react: false,
@@ -47,7 +47,7 @@ export default [
     {
         title: 'uLog', 
         description: 'A "U" friendly digital space to allow it\'s user to express your "U"-ness. A blog that allows you to upload snippets of your life and both with other over stuff you love.', 
-        image: 'ulog',
+        image: 'images/ulog.png',
         route: 'https://ulogin.herokuapp.com/posts',
         github: 'https://github.com/knnyczr/uLog',
         react: false,
@@ -62,7 +62,7 @@ export default [
     {
         title: 'Daily Posters', 
         description: 'One poster everyday for a year to develop aesthetics, refine story telling, and share beautiful design.', 
-        image: 'posters',
+        image: 'images/posters.jpg',
         route: '/works/posters',
         github: false,
         react: false,
@@ -77,7 +77,7 @@ export default [
     {
         title: 'this is a thing', 
         description: 'LIKWID is a fictional cold press bottled juice company. This is an experimental branding project featuring packaging design, company brand, and advertising.', 
-        image: 'likwid',
+        image: 'images/LIKWID.png',
         route: '/works/likwid',
         github: false,
         react: false,
@@ -92,7 +92,7 @@ export default [
     {
         title: 'Senior Thesis', 
         description: '(2016) Mixed Media <br />Experimental sculptural work for Senior Thesis show features self made benches, seven T8 lights, and printed color gradients.', 
-        image: 'thesis',
+        image: 'images/thesis.jpg',
         route: '/works/thesis',
         github: false,
         react: false,
@@ -107,7 +107,7 @@ export default [
     {
         title: 'Amy\'s Place', 
         description: 'Amy\'s Place is a local diner in localed in downtown Buffalo known for it\'s vegan/vegetarian/meat lover\'s menu.', 
-        image: 'amys',
+        image: 'images/amyss',
         route: '/works/amys',
         github: false,
         react: false,

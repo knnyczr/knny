@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {} from 'dotenv/config';
-import Main from './Main';
+import Main from './Main.jsx';
 import Nav from './Nav';
 import './css/Main.css';
 import 'bulma/css/bulma.css';
